@@ -227,4 +227,84 @@ licencia y volumen se documentan en detalle en la \Cref{sec:procedimiento}.
     volumen de datos aumenta; sin embargo, ese crecimiento del speedup
     termina saturándose como consecuencia directa de la Ley de
     Amdahl~\autocite{grama2003,amdahl1967}, que se desarrolla a continuación.
+
+    \subsubsection{Ley de Amdahl: formulación y límite teórico}
+
+    Amdahl argumentó en 1967 que todo programa contiene una fracción de
+    trabajo inherentemente secuencial —en su caso, la sobrecarga de
+    gestión de datos (\emph{data management housekeeping})— que no es
+    susceptible de paralelización, y que dicha fracción, no el número de
+    procesadores disponibles, es la que termina acotando el rendimiento
+    máximo alcanzable~\autocite{amdahl1967}. El propio autor ilustra el
+    argumento con una cifra empírica: si aproximadamente el 40\,\% de las
+    instrucciones de una carga de producción corresponden a esa gestión
+    secuencial, incluso reduciendo esa sobrecarga a la mitad mediante
+    hardware dedicado, el límite superior de throughput queda fijado entre
+    cinco y siete veces la tasa de procesamiento secuencial, sin importar
+    cuántos procesadores adicionales se añadan~\autocite{amdahl1967}.
+
+    Formalmente, sea $p$ la fracción paralelizable de una tarea,
+    $(1-p)$ su fracción estrictamente serial y $N$ el número de unidades
+    de procesamiento. El speedup de Amdahl es
+
+    \begin{equation}
+        S(N) = \frac{1}{(1-p) + \dfrac{p}{N}},
+        \label{eq:amdahl}
+    \end{equation}
+
+    cuyo límite superior, cuando $N \to \infty$, queda fijado
+    exclusivamente por la fracción serial:
+
+    \begin{equation}
+        S_{\max} = \lim_{N \to \infty} S(N) = \frac{1}{1-p}.
+        \label{eq:amdahl-max}
+    \end{equation}
+
+    La ecuación~\eqref{eq:amdahl-max} es la formalización directa del argumento
+    de Amdahl: por más que $N$ crezca sin límite, el segundo término del
+    denominador de~\eqref{eq:amdahl} tiende a cero y el speedup queda
+    acotado por la parte no paralelizable del programa.
+
+    Finalmente, la eficiencia del paralelismo relaciona el speedup
+    obtenido con los recursos invertidos para alcanzarlo:
+
+    \begin{equation}
+        E(N) = \frac{S(N)}{N}.
+        \label{eq:eficiencia}
+    \end{equation}
+
+    Grama et al.\ formalizan el speedup, en términos generales, como el
+    cociente entre el tiempo de ejecución del mejor algoritmo secuencial
+    conocido y el tiempo del algoritmo paralelo equivalente sobre $N$
+    elementos de procesamiento, y muestran experimentalmente que dicho
+    speedup satura y la eficiencia decae precisamente como consecuencia de
+    la Ley de Amdahl~\autocite{grama2003,amdahl1967}.
+
+    \subsubsection{Ley de Gustafson-Barsis: escalado en lugar de tamaño fijo}
+
+    Gustafson señaló en 1988 que la formulación de Amdahl asume
+    implícitamente que la fracción paralelizable $p$ es independiente de
+    $N$, una condición que rara vez se cumple en la práctica: en los
+    entornos de producción reales el tamaño del problema tiende a escalar
+    junto con la capacidad de cómputo disponible, de modo que resulta más
+    realista mantener constante el tiempo de ejecución que el tamaño del
+    problema~\autocite{gustafson1988}. A partir de esta observación propone el
+    \emph{speedup escalado}, que en su forma simplificada se expresa como
+
+    \begin{equation}
+        S_G(N) = N - (1-p)(N-1).
+        \label{eq:gustafson}
+    \end{equation}
+
+    A diferencia de la curva pesimista de~\eqref{eq:amdahl}, la
+    ecuación~\eqref{eq:gustafson} crece casi linealmente con $N$, porque
+    supone que la porción de trabajo paralelizable aumenta junto con los
+    recursos disponibles en lugar de permanecer fija. Gustafson respalda
+    el argumento con tres aplicaciones reales ejecutadas en un hipercubo
+    de 1024 procesadores en Sandia National Laboratories —análisis de
+    esfuerzo en vigas, simulación de ondas superficiales y flujo de fluido
+    inestable—, en las que se obtuvieron factores de speedup superiores a
+    1000, muy por encima de lo que la Ley de Amdahl predeciría para
+    fracciones seriales de apenas 0.4--0.8\,\%~\autocite{gustafson1988}.
+
 \end{document}
