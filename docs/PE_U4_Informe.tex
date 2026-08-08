@@ -161,4 +161,70 @@ clasificado por tipo de servicio (\emph{Phone}, \emph{Internet}, \emph{TV}), tip
 específico, método de acceso y ubicación geográfica --la misma estructura de tipo de incidencia,
 canal y zona que tendría el sistema de tickets interno de un ISP--. El dataset, su procedencia,
 licencia y volumen se documentan en detalle en la \Cref{sec:procedimiento}.
+
+
+    \subsection{Objetivos}
+    \label{sec:objetivos}
+
+    \textbf{Objetivo general.} Comprobar experimentalmente la Ley de Amdahl implementando y
+    midiendo el rendimiento de un \emph{pipeline} distribuido de datos con Apache Spark sobre un
+    conjunto de datos real de al menos 500{,}000 registros, comparándolo con el procesamiento
+    secuencial equivalente.
+
+    \textbf{Objetivos específicos.}
+    \begin{enumerate}[leftmargin=1.5em]
+    \item Implementar las mismas cinco transformaciones con pandas (secuencial) y con PySpark
+    (distribuido).
+    \item Medir los tiempos de ejecución con precisión de microsegundos, con cinco repeticiones
+    por transformación y reporte de la mediana.
+    \item Calcular el \emph{speedup} experimental y compararlo con el \emph{speedup} teórico de
+    Amdahl.
+    \item Determinar la fracción serial de cada transformación y el límite práctico de
+    paralelización.
+    \end{enumerate}
+
+    El resto de este documento se organiza como sigue: la \Cref{sec:fundamento-teorico} desarrolla
+    el marco teórico de paralelismo, MapReduce/Hadoop, arquitectura de Spark y computación en la
+    nube; la \Cref{sec:procedimiento} detalla el procedimiento aplicado; la
+    \Cref{sec:resultados} presenta los resultados cuantitativos con el trabajo matemático explícito
+    del ajuste de Amdahl; la \Cref{sec:analisis-critico} discute críticamente estos resultados; el
+    Anexo A (\Cref{sec:preguntas-analisis}) responde las cuatro preguntas obligatorias de la guía; y
+    la última sección recoge las conclusiones individuales de cada integrante del equipo.
+
+% ============================================================
+% Sección: secciones/fundamento_teorico
+% ============================================================
+    \section{Fundamento teórico}
+    \label{sec:fundamento-teorico}
+
+% =====================================================================
+% 5.1 Fundamentos de paralelismo y Ley de Amdahl
+% =====================================================================
+
+    \subsection{Fundamentos de paralelismo y Ley de Amdahl}
+    \label{sec:fundamento-amdahl}
+
+    \subsubsection{Paralelismo de datos y paralelismo de tareas}
+
+    Antes de introducir el modelo de Amdahl es necesario distinguir los dos
+    paradigmas fundamentales bajo los cuales se descompone un problema
+    computacional en unidades concurrentes. Grama et al.\ definen el
+    \emph{paralelismo de datos} como aquel que surge cuando operaciones
+    idénticas se aplican de forma concurrente sobre elementos de datos
+    distintos, mientras que el \emph{paralelismo de tareas} es el que se
+    expresa de forma natural mediante tareas independientes organizadas en
+    un grafo de dependencias~\autocite{grama2003}. Un ejemplo canónico del
+    primer caso es la multiplicación de matrices densas, donde cuatro
+    tareas idénticas se aplican sobre submatrices distintas de los
+    operandos; un ejemplo del segundo caso es el \emph{quicksort} paralelo
+    o la factorización de matrices dispersas, donde la estructura de
+    dependencias entre subtareas —y no la uniformidad de la operación—
+    determina el grado de concurrencia explotable~\autocite{grama2003}.
+
+    Esta distinción no es meramente taxonómica: el propio grado de
+    paralelismo de datos tiende a crecer con el tamaño del problema, lo
+    que permite emplear más unidades de procesamiento a medida que el
+    volumen de datos aumenta; sin embargo, ese crecimiento del speedup
+    termina saturándose como consecuencia directa de la Ley de
+    Amdahl~\autocite{grama2003,amdahl1967}, que se desarrolla a continuación.
 \end{document}
