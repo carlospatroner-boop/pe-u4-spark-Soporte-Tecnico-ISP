@@ -109,5 +109,29 @@
         \vfill
         {\small Repositorio: \url{https://github.com/carlospatroner-boop/pe-u4-spark-Soporte-Tecnico-ISP}}\\[0.3cm]
     \end{titlepage}
+\subsection{Contexto: el equipo y el dominio de referencia}
+\label{sec:contexto-pfc}
 
+El equipo ACC trabaja sobre el dominio \textbf{Soporte Técnico ISP}: la gestión de tickets de
+soporte técnico de un proveedor de servicios de internet. Un ISP recibe, en operación normal, un
+volumen de solicitudes de soporte varios órdenes de magnitud mayor al que un análisis
+secuencial en un único hilo puede procesar con latencia razonable: clasificación de incidencias
+por tipo, agregación por zona geográfica o estado, cruce con catálogos de referencia (clientes,
+regiones, técnicos disponibles) y priorización automática de la cola de atención son operaciones
+que, sobre históricos de cientos de miles o millones de tickets, se benefician directamente de un
+motor de procesamiento distribuido. La decisión de negocio concreta que este trabajo busca
+sustentar es la \textbf{priorización automática de la cola de atención técnica}: a partir de una
+columna derivada de prioridad y de la agregación de tickets por estado/zona, un ISP real podría
+decidir en qué zonas reforzar personal técnico y qué incidencias escalar primero, en lugar de
+atenderlas estrictamente por orden de llegada.
+
+No existe un histórico público de tickets internos de un ISP ecuatoriano al que el equipo tenga
+acceso legítimo, por lo que se utilizó como sustituto un conjunto de datos real y público con
+una estructura equivalente: \emph{CGB --- Consumer Complaints Data} de la Federal Communications
+Commission de Estados Unidos, en el que cada fila es, literalmente, un \emph{ticket}
+(\texttt{Ticket ID}) de queja de un consumidor contra un proveedor de telecomunicaciones,
+clasificado por tipo de servicio (\emph{Phone}, \emph{Internet}, \emph{TV}), tipo de problema
+específico, método de acceso y ubicación geográfica --la misma estructura de tipo de incidencia,
+canal y zona que tendría el sistema de tickets interno de un ISP--. El dataset, su procedencia,
+licencia y volumen se documentan en detalle en la \Cref{sec:procedimiento}.
 \end{document}
