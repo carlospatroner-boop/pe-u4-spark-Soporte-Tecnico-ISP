@@ -1,0 +1,7 @@
+{
+  "T1_filtrado": 0.184637,
+  "T2_agrupacion": 0.157455,
+  "T3_join": 0.136325,
+  "T4_columna_derivada": 0.35589,
+  "T5_top_n": 0.116895
+}

@@ -1,0 +1,6 @@
+transformacion,mediana_pandas_s,mediana_pyspark_s,speedup
+T1_filtrado,0.184637,1.078875,0.1711
+T2_agrupacion,0.157455,1.885391,0.0835
+T3_join,0.136325,1.82899,0.0745
+T4_columna_derivada,0.35589,0.848307,0.4195
+T5_top_n,0.116895,1.428594,0.0818
