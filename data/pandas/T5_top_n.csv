@@ -1,0 +1,1001 @@
+id,ticket_created,issue_type,method,issue,city,state,zip
+8961072,2026-08-03 04:24:44+00:00,Internet,Fiber,Equipment,Tacoma,WA,98407.0
+8961067,2026-08-03 04:21:32+00:00,Internet,Wireless,Billing,New york,NY,10023.0
+8961062,2026-08-03 04:19:32+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Mesa,AZ,85207.0
+8961058,2026-08-03 04:10:23+00:00,Phone,Internet (VOIP),Interference (including signal jammers),Moorestown,NJ,8057.0
+8961048,2026-08-03 04:03:25+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Salado,TX,76571.0
+8961045,2026-08-03 03:55:45+00:00,Internet,Wireless,Availability,Dearborn,MI,48120.0
+8961044,2026-08-03 03:53:44+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Saint paul,MN,55112.0
+8961040,2026-08-03 03:50:25+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Manchester,OH,45144.0
+8961036,2026-08-03 03:49:25+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Cape coral,FL,33914.0
+8961034,2026-08-03 03:45:29+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lancaster,CA,93536.0
+8961033,2026-08-03 03:44:43+00:00,Internet,Wireless,Availability,Dearborn,MI,48120.0
+8961032,2026-08-03 03:42:29+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Los angeles,CA,91306.0
+8961031,2026-08-03 03:42:20+00:00,TV,Cable,Billing,Charlotte,NC,28213.0
+8961029,2026-08-03 03:38:25+00:00,Phone,Wired,Unwanted Calls,Batesville,AR,72501.0
+8961027,2026-08-03 03:33:27+00:00,Internet,Wireless,Billing,Highland,CA,92346.0
+8961023,2026-08-03 03:31:49+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Beverly hills,CA,90212.0
+8961018,2026-08-03 03:28:28+00:00,Internet,Cable,Speed,Durham,NC,27705.0
+8961016,2026-08-03 03:25:00+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Orlando,FL,32839.0
+8961013,2026-08-03 03:22:08+00:00,Phone,Wireless (cell phone/other mobile device),Billing,North ridgeville,OH,44039.0
+8961008,2026-08-03 03:17:40+00:00,Internet,Cable,Billing,Seattle,WA,98115.0
+8961000,2026-08-03 03:07:29+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Annapolis,MD,21404.0
+8960999,2026-08-03 03:07:06+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Forney,TX,75126.0
+8960998,2026-08-03 03:06:33+00:00,Phone,Wireless (cell phone/other mobile device),Billing,San francisco,CA,94107.0
+8960994,2026-08-03 03:01:18+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Orlando,FL,32835.0
+8960993,2026-08-03 02:58:49+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Tuscumbia,AL,35674.0
+8960991,2026-08-03 02:57:13+00:00,Internet,Cable,Billing,Wolfeboro,NH,3894.0
+8960990,2026-08-03 02:56:37+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Gilbert,AZ,85234.0
+8960988,2026-08-03 02:56:01+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Las vegas,NV,89139.0
+8960986,2026-08-03 02:52:06+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Washougal,WA,98671.0
+8960978,2026-08-03 02:47:14+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Hanover township,PA,18706.0
+8960977,2026-08-03 02:46:32+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Clinton,IA,52732.0
+8960975,2026-08-03 02:43:36+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Salvisa,KY,40372.0
+8960974,2026-08-03 02:40:50+00:00,Internet,Cable,Interference,Prestonsburg,KY,41653.0
+8960969,2026-08-03 02:31:06+00:00,Internet,Fiber,Billing,Falls church,VA,22044.0
+8960968,2026-08-03 02:30:27+00:00,Internet,Wireless,Availability,Montebello,CA,90640.0
+8960964,2026-08-03 02:25:00+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Berwick,PA,18603.0
+8960963,2026-08-03 02:24:33+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Sidney,TX,76474.0
+8960960,2026-08-03 02:22:19+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Richland hills,TX,76118.0
+8960957,2026-08-03 02:19:13+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Delray beach,FL,33446.0
+8960955,2026-08-03 02:18:25+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Flushing,NY,11355.0
+8960950,2026-08-03 02:16:18+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Astoria,NY,11106.0
+8960947,2026-08-03 02:14:47+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Milwaukee,WI,53207.0
+8960946,2026-08-03 02:14:33+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Marion,SC,29571.0
+8960939,2026-08-03 02:03:59+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Wallins,KY,40873.0
+8960938,2026-08-03 02:03:56+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8960933,2026-08-03 01:55:19+00:00,Phone,Internet (VOIP),Billing,Columbia,PA,17512.0
+8960931,2026-08-03 01:54:11+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Chesterfield,MO,63017.0
+8960929,2026-08-03 01:49:08+00:00,TV,,Billing,Phoenix,AZ,85022.0
+8960925,2026-08-03 01:44:39+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Holt,MI,48842.0
+8960923,2026-08-03 01:43:45+00:00,Phone,Internet (VOIP),Unwanted Calls,Arlington,MA,2474.0
+8960922,2026-08-03 01:43:01+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Horsham,PA,19044.0
+8960919,2026-08-03 01:37:19+00:00,Internet,Wireless,Availability,Phila,PA,19120.0
+8960917,2026-08-03 01:33:10+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Redding,CA,96003.0
+8960916,2026-08-03 01:32:28+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Tupman,CA,93276.0
+8960915,2026-08-03 01:32:26+00:00,Internet,Wireless,Equipment,American fork,UT,84003.0
+8960913,2026-08-03 01:32:16+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Lilburn,GA,30047.0
+8960910,2026-08-03 01:31:47+00:00,Internet,Wireless,Billing,Alhambra,CA,91803.0
+8960908,2026-08-03 01:31:35+00:00,Internet,Fiber,Billing,Rohnert park,CA,94928.0
+8960907,2026-08-03 01:30:12+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Irvine,CA,92620.0
+8960903,2026-08-03 01:27:45+00:00,TV,Broadcast,Indecency,Stone mountain,GA,30083.0
+8960900,2026-08-03 01:24:23+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,San jose,CA,95129.0
+8960897,2026-08-03 01:21:11+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Sealy,TX,77474.0
+8960893,2026-08-03 01:18:21+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Allen park,MI,48101.0
+8960889,2026-08-03 01:14:30+00:00,Internet,Fiber,Availability,Carthage,TX,75633.0
+8960888,2026-08-03 01:13:29+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Sandy springs,GA,30328.0
+8960887,2026-08-03 01:11:46+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Wilmer,AL,36587.0
+8960886,2026-08-03 01:11:44+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lincoln,NE,68512.0
+8960883,2026-08-03 01:10:21+00:00,TV,Broadcast,Availability,Greenville,SC,29605.0
+8960881,2026-08-03 01:04:45+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Sheffield,AL,35660.0
+8960878,2026-08-03 01:01:43+00:00,Internet,Wireless,Billing,Port hueneme,CA,93041.0
+8960873,2026-08-03 00:56:36+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Los angeles,CA,90001.0
+8960871,2026-08-03 00:55:28+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Glendale,AZ,85306.0
+8960869,2026-08-03 00:51:30+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Otsego,MN,55301.0
+8960866,2026-08-03 00:50:10+00:00,Internet,Cable,Billing,Bronx,NY,10462.0
+8960863,2026-08-03 00:46:32+00:00,Internet,Cable,Speed,Houston,TX,77598.0
+8960860,2026-08-03 00:44:34+00:00,Internet,Fiber,Privacy,Oak creek,WI,53154.0
+8960856,2026-08-03 00:43:05+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Port gibson,MS,39150.0
+8960854,2026-08-03 00:41:51+00:00,Internet,Wireless,Equipment,Purcellville,VA,20132.0
+8960853,2026-08-03 00:41:20+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,San diego,CA,92101.0
+8960851,2026-08-03 00:39:45+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Washington township,NJ,7865.0
+8960848,2026-08-03 00:37:24+00:00,TV,,Loud Commercials,Fort washington,MD,20744.0
+8960843,2026-08-03 00:34:45+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Maplewood,NJ,7040.0
+8960841,2026-08-03 00:33:57+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Teaneck,NJ,7666.0
+8960840,2026-08-03 00:32:47+00:00,Phone,Wired,Unwanted Calls,Denver,CO,80239.0
+8960839,2026-08-03 00:32:36+00:00,Internet,Fiber,Billing,Bethlehem,PA,18018.0
+8960838,2026-08-03 00:32:15+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Miami,FL,33130.0
+8960833,2026-08-03 00:28:24+00:00,Internet,Wireless,Interference,Walnut,CA,91789.0
+8960830,2026-08-03 00:27:23+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Columbus,OH,43217.0
+8960826,2026-08-03 00:23:00+00:00,Internet,Cable,Billing,Fort lupton,CO,80621.0
+8960825,2026-08-03 00:22:53+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,San francisco,CA,94158.0
+8960817,2026-08-03 00:19:22+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Mesa,AZ,85212.0
+8960814,2026-08-03 00:15:00+00:00,Phone,Internet (VOIP),Number Portability (keeping your number if you change providers),Piedmont,OK,73078.0
+8960813,2026-08-03 00:13:43+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Arvada,CO,80004.0
+8960811,2026-08-03 00:12:46+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Jersey city,NJ,7302.0
+8960810,2026-08-03 00:12:37+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Humble,TX,77356.0
+8960807,2026-08-03 00:11:50+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Trenton,MI,48183.0
+8960804,2026-08-03 00:10:50+00:00,Internet,Cable,Billing,Garden city,NY,11530.0
+8960802,2026-08-03 00:06:05+00:00,TV,Cable,Billing,Stamford,CT,6902.0
+8960800,2026-08-02 23:59:01+00:00,Phone,Internet (VOIP),Billing,Tarboro,NC,27886.0
+8960798,2026-08-02 23:58:04+00:00,Internet,Cable,Speed,Forest,MS,39074.0
+8960797,2026-08-02 23:57:59+00:00,Internet,Wireless,Billing,Macomb,MI,48044.0
+8960795,2026-08-02 23:56:47+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Oak lawn,IL,60453.0
+8960794,2026-08-02 23:56:41+00:00,Phone,Wired,Availability (including rural call completion),Jay,FL,32565.0
+8960792,2026-08-02 23:54:23+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Denver,CO,80210.0
+8960791,2026-08-02 23:54:10+00:00,Internet,Satellite,Privacy,Texarkana,TX,75501.0
+8960788,2026-08-02 23:49:32+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Muldrow,OK,75948.0
+8960786,2026-08-02 23:48:26+00:00,Internet,Cable,Billing,Brooklyn,NY,11225.0
+8960785,2026-08-02 23:48:15+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8960783,2026-08-02 23:47:16+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Raleigh,NC,27604.0
+8960781,2026-08-02 23:46:29+00:00,TV,Broadcast,Indecency,Carrollton,VA,23314.0
+8960779,2026-08-02 23:46:04+00:00,Internet,Wireless,Privacy,New york,NY,10019.0
+8960777,2026-08-02 23:44:37+00:00,Internet,Wireless,Interference,East wareham,MA,2558.0
+8960775,2026-08-02 23:39:21+00:00,Internet,Wireless,Speed,Livingston,TX,77351.0
+8960773,2026-08-02 23:38:07+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Macon,GA,31210.0
+8960772,2026-08-02 23:36:58+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,St paul,MN,55103.0
+8960768,2026-08-02 23:34:44+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Riverbank,CA,95367.0
+8960766,2026-08-02 23:34:09+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Grandville,MI,49418.0
+8960763,2026-08-02 23:31:54+00:00,TV,,Loud Commercials,Napa,CA,94559.0
+8960761,2026-08-02 23:29:31+00:00,Internet,Satellite,Availability,Vega baja,PR,693.0
+8960758,2026-08-02 23:28:25+00:00,Phone,Wireless (cell phone/other mobile device),Billing,South salt lake,UT,84119.0
+8960756,2026-08-02 23:26:57+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Framingham,MA,1701.0
+8960752,2026-08-02 23:25:09+00:00,Internet,Cable,Privacy,West valley,UT,84119.0
+8960749,2026-08-02 23:24:34+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Tulsa,OK,74135.0
+8960746,2026-08-02 23:21:15+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Covington,LA,70435.0
+8960745,2026-08-02 23:20:21+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Queen creek,AZ,85144.0
+8960744,2026-08-02 23:19:50+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pleasant grove,UT,84062.0
+8960741,2026-08-02 23:18:24+00:00,Phone,Wireless (cell phone/other mobile device),Billing,West covina,CA,91790.0
+8960740,2026-08-02 23:18:21+00:00,Internet,Wireless,Billing,Newport,ME,4953.0
+8960737,2026-08-02 23:10:52+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Suffern,NY,10901.0
+8960735,2026-08-02 23:09:16+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Queen creek,AZ,85142.0
+8960733,2026-08-02 23:07:55+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Seattle,WA,98106.0
+8960732,2026-08-02 23:07:15+00:00,Phone,,Slamming (change of your carrier without permission),Tulsa,OK,74126.0
+8960728,2026-08-02 23:05:00+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Levittown,PA,19057.0
+8960723,2026-08-02 22:58:42+00:00,Internet,Wireless,Interference,Carson,CA,90746.0
+8960721,2026-08-02 22:57:19+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,North chicago,IL,60064.0
+8960718,2026-08-02 22:56:11+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Chicago,IL,60641.0
+8960715,2026-08-02 22:53:34+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Lorain,OH,44053.0
+8960712,2026-08-02 22:52:50+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Mount pleasant,SC,29466.0
+8960707,2026-08-02 22:47:23+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Lutz,FL,33549.0
+8960703,2026-08-02 22:45:48+00:00,Internet,Fiber,Equipment,Winstonsalem,NC,27106.0
+8960698,2026-08-02 22:43:52+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Mapleton,KS,66754.0
+8960697,2026-08-02 22:42:22+00:00,Internet,Wireless,Billing,Anaheim,CA,92802.0
+8960695,2026-08-02 22:41:46+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Sheffield,AL,35660.0
+8960694,2026-08-02 22:40:07+00:00,Phone,Wired,Equipment,Houston,TX,77098.0
+8960692,2026-08-02 22:39:28+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Tucson,AZ,85712.0
+8960688,2026-08-02 22:37:20+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Medford,OR,97504.0
+8960687,2026-08-02 22:37:13+00:00,Internet,Cable,Billing,Auburn,WA,98001.0
+8960685,2026-08-02 22:36:26+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lumberton,MS,39455.0
+8960680,2026-08-02 22:31:52+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Byron,MI,48418.0
+8960678,2026-08-02 22:31:12+00:00,Internet,Cable,Billing,South dayton,NY,14138.0
+8960672,2026-08-02 22:28:35+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8960671,2026-08-02 22:27:55+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Nashville,TN,37215.0
+8960670,2026-08-02 22:27:38+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Lewisville,TX,75067.0
+8960664,2026-08-02 22:22:49+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Rochester hills,MI,48309.0
+8960663,2026-08-02 22:22:27+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Live oak,FL,32060.0
+8960661,2026-08-02 22:21:54+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Fairhope,AL,36532.0
+8960658,2026-08-02 22:20:32+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Irvine,CA,92618.0
+8960655,2026-08-02 22:17:51+00:00,Internet,Wireless,Speed,Manchester,CT,6042.0
+8960654,2026-08-02 22:14:52+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Deerfield beach,FL,33441.0
+8960653,2026-08-02 22:14:41+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Cornelius,NC,28031.0
+8960647,2026-08-02 22:12:10+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lansdale,PA,19446.0
+8960643,2026-08-02 22:11:03+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Vanceburg,KY,41179.0
+8960642,2026-08-02 22:10:48+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,El paso,TX,79934.0
+8960637,2026-08-02 22:08:25+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Houston,TX,77060.0
+8960636,2026-08-02 22:06:46+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Phoenix,AZ,85020.0
+8960633,2026-08-02 22:06:13+00:00,Internet,Fiber,Availability,Mooresville,NC,28115.0
+8960632,2026-08-02 22:06:07+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Los angeles,CA,90068.0
+8960630,2026-08-02 22:05:34+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Elizabeth lake,CA,93532.0
+8960619,2026-08-02 22:00:34+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Newark,NJ,7107.0
+8960618,2026-08-02 22:00:05+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Lawrence,KS,66049.0
+8960616,2026-08-02 21:59:39+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Lucedale,MS,39452.0
+8960610,2026-08-02 21:57:14+00:00,Phone,Internet (VOIP),Cramming (unauthorized charges on your phone bill),Hillsborough,NJ,8844.0
+8960607,2026-08-02 21:54:52+00:00,Internet,Cable,Billing,Bellevue,WA,98005.0
+8960606,2026-08-02 21:54:32+00:00,Internet,Wireless,Speed,Woodbridge,VA,22193.0
+8960601,2026-08-02 21:53:18+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Lakewood,NJ,8701.0
+8960597,2026-08-02 21:50:09+00:00,Internet,Wireless,Billing,Washington,DC,20002.0
+8960596,2026-08-02 21:48:48+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Silsbee,TX,77656.0
+8960595,2026-08-02 21:48:16+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Mission viejo,CA,92691.0
+8960592,2026-08-02 21:47:32+00:00,TV,Cable,Equipment,Crestwood,IL,60418.0
+8960590,2026-08-02 21:47:27+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Bakerfield,CA,93306.0
+8960585,2026-08-02 21:45:38+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Glendale,AZ,85301.0
+8960582,2026-08-02 21:44:22+00:00,Internet,Cable,Equipment,Fountaintown,IN,46130.0
+8960577,2026-08-02 21:41:02+00:00,Internet,Cable,Availability,Montgomery,TX,77356.0
+8960574,2026-08-02 21:39:30+00:00,Internet,Fiber,Billing,San francisco,CA,94158.0
+8960573,2026-08-02 21:39:29+00:00,Internet,Cable,Speed,Quogue,NY,11959.0
+8960571,2026-08-02 21:35:18+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Rochester,NY,14609.0
+8960569,2026-08-02 21:33:32+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Salt lake city,UT,84105.0
+8960567,2026-08-02 21:33:19+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Oviedo,FL,32766.0
+8960562,2026-08-02 21:30:52+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Kaiser,MO,65047.0
+8960561,2026-08-02 21:28:00+00:00,Phone,Internet (VOIP),Equipment,Los angeles,CA,90048.0
+8960559,2026-08-02 21:27:21+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),St paul,MN,55103.0
+8960558,2026-08-02 21:20:15+00:00,Internet,Cable,Billing,Eastvale,CA,92880.0
+8960557,2026-08-02 21:19:10+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Troy,MI,48098.0
+8960554,2026-08-02 21:18:39+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Aubrey,TX,76227.0
+8960552,2026-08-02 21:16:17+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Lakewood,NJ,8701.0
+8960546,2026-08-02 21:08:47+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Memphis,TN,38115.0
+8960543,2026-08-02 21:05:56+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Columbus,OH,43204.0
+8960539,2026-08-02 21:04:57+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Honolulu,HI,96818.0
+8960537,2026-08-02 21:04:28+00:00,Phone,Wireless (cell phone/other mobile device),Billing,San jose,CA,95134.0
+8960536,2026-08-02 21:04:12+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Ellenwood,GA,30294.0
+8960533,2026-08-02 21:02:59+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Phoenix,AZ,85018.0
+8960532,2026-08-02 20:58:35+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Wilmington,DE,19805.0
+8960530,2026-08-02 20:57:51+00:00,Internet,Wireless,Privacy,O fallon,IL,62269.0
+8960528,2026-08-02 20:55:00+00:00,Internet,Wireless,Interference,Hesperia,CA,92345.0
+8960524,2026-08-02 20:52:06+00:00,Internet,Fiber,Equipment,Los angeles,CA,90044.0
+8960523,2026-08-02 20:50:25+00:00,Phone,Wireless (cell phone/other mobile device),Billing,San jose,CA,95120.0
+8960521,2026-08-02 20:47:46+00:00,Internet,Cable,Availability,Brunswick,OH,44212.0
+8960518,2026-08-02 20:45:44+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Dallas,TX,75227.0
+8960511,2026-08-02 20:43:33+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Hayward,CA,94544.0
+8960508,2026-08-02 20:41:04+00:00,Internet,Fiber,Equipment,Port saint lucie,FL,34987.0
+8960507,2026-08-02 20:40:54+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Valley springs,CA,95252.0
+8960505,2026-08-02 20:40:38+00:00,Internet,DSL,Billing,Homestead,FL,33030.0
+8960504,2026-08-02 20:40:34+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Pinellas park,FL,33781.0
+8960503,2026-08-02 20:39:05+00:00,Internet,Wireless,Equipment,Schenectady,NY,12305.0
+8960500,2026-08-02 20:37:45+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Paynesville,MO,63336.0
+8960497,2026-08-02 20:37:01+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Lakeland,FL,33810.0
+8960496,2026-08-02 20:36:35+00:00,Internet,Cable,Billing,Jersey city,NJ,7302.0
+8960493,2026-08-02 20:35:54+00:00,Internet,Wireless,Billing,West covina,CA,91790.0
+8960492,2026-08-02 20:35:34+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Prairie du chien,WI,53821.0
+8960489,2026-08-02 20:29:24+00:00,Phone,Wired,Billing,Wake forest,NC,27587.0
+8960487,2026-08-02 20:28:25+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Waterford,MI,48329.0
+8960486,2026-08-02 20:28:11+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Spokane,WA,99208.0
+8960482,2026-08-02 20:26:36+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Campton,NH,3223.0
+8960476,2026-08-02 20:23:22+00:00,Phone,Wired,Availability (including rural call completion),Baileys harbor,WI,54202.0
+8960475,2026-08-02 20:23:14+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Elk grove,CA,95758.0
+8960471,2026-08-02 20:20:46+00:00,Internet,Fiber,Availability,Arlington,WI,53911.0
+8960470,2026-08-02 20:20:21+00:00,Internet,Wireless,Billing,Doral,FL,33178.0
+8960467,2026-08-02 20:19:01+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Navarre,OH,44662.0
+8960464,2026-08-02 20:18:15+00:00,Internet,Fiber,Billing,West monroe,NY,13167.0
+8960463,2026-08-02 20:18:06+00:00,Internet,Cable,Interference,Bullhead city,AZ,86442.0
+8960461,2026-08-02 20:17:55+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Kansas city,KS,66104.0
+8960454,2026-08-02 20:13:26+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lees summit,MO,64063.0
+8960453,2026-08-02 20:13:06+00:00,Internet,Wireless,Privacy,Sa,TX,78216.0
+8960452,2026-08-02 20:12:52+00:00,Internet,Wireless,Privacy,Stone mountain,GA,30088.0
+8960451,2026-08-02 20:12:45+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Monroe,LA,71211.0
+8960450,2026-08-02 20:12:41+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Orlando,FL,32810.0
+8960449,2026-08-02 20:12:28+00:00,Internet,Cable,Interference,Farmville,NC,27828.0
+8960443,2026-08-02 20:09:09+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Cedar hill,TX,75104.0
+8960439,2026-08-02 20:07:38+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,West jordan,UT,84081.0
+8960438,2026-08-02 20:06:36+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Lenexa,KS,66219.0
+8960430,2026-08-02 20:03:24+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Gibsonia,PA,15044.0
+8960429,2026-08-02 20:03:16+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Los molinos,CA,96055.0
+8960425,2026-08-02 20:00:34+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Las vegas,NV,89166.0
+8960424,2026-08-02 19:59:02+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Charlotte,NC,28215.0
+8960423,2026-08-02 19:58:40+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Orange,CA,92865.0
+8960420,2026-08-02 19:57:18+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Portland,OR,97220.0
+8960417,2026-08-02 19:55:57+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Montara,CA,94019.0
+8960416,2026-08-02 19:55:35+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Dilworth,MN,56529.0
+8960411,2026-08-02 19:53:09+00:00,TV,Cable,Availability,Hendersonville,NC,28739.0
+8960410,2026-08-02 19:52:36+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Charlotte,NC,28215.0
+8960407,2026-08-02 19:51:23+00:00,TV,Cable,Interference,Aiken,SC,29803.0
+8960406,2026-08-02 19:50:49+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Mount wolf,PA,17347.0
+8960403,2026-08-02 19:47:12+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Fairborn,OH,45324.0
+8960400,2026-08-02 19:44:47+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Portal,GA,30450.0
+8960399,2026-08-02 19:44:46+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Columbus,OH,43215.0
+8960398,2026-08-02 19:44:32+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Hurst,TX,76053.0
+8960396,2026-08-02 19:44:23+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Half moon bay,CA,94019.0
+8960390,2026-08-02 19:41:21+00:00,TV,Satellite,Billing,Shady cove,OR,97539.0
+8960388,2026-08-02 19:40:54+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Bentonville,AR,72712.0
+8960387,2026-08-02 19:40:47+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Denver,CO,80203.0
+8960384,2026-08-02 19:38:34+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Manassas,VA,20109.0
+8960382,2026-08-02 19:31:31+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Newton,KS,67114.0
+8960381,2026-08-02 19:30:49+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Cumberland,RI,2864.0
+8960376,2026-08-02 19:25:09+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Chicago,IL,60618.0
+8960374,2026-08-02 19:24:38+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8960370,2026-08-02 19:19:17+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Broadway,NC,27505.0
+8960369,2026-08-02 19:18:43+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8960368,2026-08-02 19:18:27+00:00,Phone,Wired,Availability (including rural call completion),Yelm,WA,98597.0
+8960366,2026-08-02 19:13:42+00:00,TV,Broadcast,Indecency,Maple grove,MN,55311.0
+8960365,2026-08-02 19:13:30+00:00,Internet,Wireless,Billing,Mt vernon,IL,62864.0
+8960362,2026-08-02 19:12:00+00:00,TV,Cable,Billing,Macon,GA,31211.0
+8960361,2026-08-02 19:11:55+00:00,TV,Broadcast,Availability,Davis,CA,95618.0
+8960359,2026-08-02 19:10:15+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lakewood,NJ,8701.0
+8960353,2026-08-02 19:08:19+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Portland,OR,97217.0
+8960352,2026-08-02 19:08:02+00:00,Internet,Cable,Availability,North hollywood,CA,91605.0
+8960350,2026-08-02 19:06:30+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Akron,OH,44310.0
+8960345,2026-08-02 19:01:56+00:00,Internet,Cable,Interference,Califon,NJ,7830.0
+8960343,2026-08-02 19:00:46+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Imperial,CA,92251.0
+8960342,2026-08-02 19:00:06+00:00,Phone,,Slamming (change of your carrier without permission),Hawthorne,CA,90250.0
+8960340,2026-08-02 18:58:57+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Naples,FL,34113.0
+8960338,2026-08-02 18:52:07+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Mechanicsville,VA,23116.0
+8960336,2026-08-02 18:51:32+00:00,Internet,Cable,Interference,Pooler,GA,31322.0
+8960335,2026-08-02 18:51:20+00:00,Internet,Cable,Interference,The villages,FL,32162.0
+8960332,2026-08-02 18:48:04+00:00,Internet,Cable,Billing,Claremore,OK,74019.0
+8960328,2026-08-02 18:46:43+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Portland,OR,97266.0
+8960326,2026-08-02 18:46:04+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Woburn,MA,1801.0
+8960323,2026-08-02 18:45:05+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Spring city,PA,19475.0
+8960322,2026-08-02 18:45:04+00:00,Internet,Wireless,Billing,Chantilly,VA,20151.0
+8960320,2026-08-02 18:43:21+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Palatine,IL,60074.0
+8960319,2026-08-02 18:41:42+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Youngstown,OH,44509.0
+8960318,2026-08-02 18:40:42+00:00,Internet,Wireless,Availability,Vernon,FL,32462.0
+8960316,2026-08-02 18:40:07+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Arkadelphia,AR,71923.0
+8960314,2026-08-02 18:39:32+00:00,Phone,Wireless (cell phone/other mobile device),Billing,St john,KS,67576.0
+8960311,2026-08-02 18:37:55+00:00,Internet,Wireless,Interference,Washington,DC,20011.0
+8960309,2026-08-02 18:35:25+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Auburn,WA,98002.0
+8960308,2026-08-02 18:35:15+00:00,Internet,Wireless,Availability,Lakeland,FL,33810.0
+8960307,2026-08-02 18:30:20+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Auburn,WA,98002.0
+8960306,2026-08-02 18:30:11+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Westbury,NY,11590.0
+8960304,2026-08-02 18:24:55+00:00,Internet,Wireless,Billing,East prairie,MO,63845.0
+8960302,2026-08-02 18:24:27+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Auburn,WA,98002.0
+8960301,2026-08-02 18:24:09+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Camp hill,PA,17011.0
+8960294,2026-08-02 18:21:06+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Oakland,CA,94607.0
+8960290,2026-08-02 18:20:01+00:00,Phone,Wireless (cell phone/other mobile device),Billing,East liverpool,OH,43920.0
+8960288,2026-08-02 18:19:29+00:00,Internet,Cable,Billing,Harrison city,PA,15636.0
+8960286,2026-08-02 18:19:11+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Auburn,WA,98002.0
+8960279,2026-08-02 18:15:25+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Cincinnati,OH,45233.0
+8960278,2026-08-02 18:15:21+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,San diego,CA,92114.0
+8960272,2026-08-02 18:14:43+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,North brunswick,NJ,8902.0
+8960271,2026-08-02 18:14:34+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Tiffin,IA,52340.0
+8960269,2026-08-02 18:14:09+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Auburn,WA,98002.0
+8960268,2026-08-02 18:08:54+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Phoenix,AZ,85017.0
+8960267,2026-08-02 18:08:36+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Farmington hills,MI,48334.0
+8960266,2026-08-02 18:08:32+00:00,Internet,Fiber,Billing,Arlington,TX,76001.0
+8960264,2026-08-02 18:07:56+00:00,Internet,Cable,Equipment,Ruther glen,VA,22546.0
+8960258,2026-08-02 18:04:00+00:00,Phone,Wireless (cell phone/other mobile device),Billing,North billerica,MA,1862.0
+8960256,2026-08-02 18:03:05+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Wilmington,NC,28411.0
+8960255,2026-08-02 18:03:04+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Boulder city,NV,89005.0
+8960254,2026-08-02 18:02:03+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Wrentham,MA,2093.0
+8960249,2026-08-02 18:01:01+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Auburn,WA,98002.0
+8960246,2026-08-02 18:00:01+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Phoenix,AZ,85017.0
+8960245,2026-08-02 17:59:40+00:00,Internet,Wireless,Speed,Reeds spring,MO,65737.0
+8960241,2026-08-02 17:56:35+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Fremont,CA,94555.0
+8960240,2026-08-02 17:55:58+00:00,Phone,Internet (VOIP),Unwanted Calls,Dublin,OH,43017.0
+8960238,2026-08-02 17:54:35+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Reeds spring,MO,65737.0
+8960237,2026-08-02 17:54:12+00:00,Phone,Wired,Billing,Clarksville,IN,47129.0
+8960234,2026-08-02 17:53:29+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Bronx,NY,10466.0
+8960231,2026-08-02 17:52:41+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Randolph,MA,2368.0
+8960230,2026-08-02 17:52:31+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Dallas,TX,75203.0
+8960227,2026-08-02 17:51:55+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Manville,NJ,8835.0
+8960223,2026-08-02 17:50:40+00:00,Phone,Wired,Billing,Fontana,CA,92336.0
+8960218,2026-08-02 17:48:34+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Salem,OR,97305.0
+8960217,2026-08-02 17:48:18+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Corona,CA,92883.0
+8960212,2026-08-02 17:46:45+00:00,Internet,Cable,Billing,Sykesville,MD,21784.0
+8960211,2026-08-02 17:46:27+00:00,Internet,DSL,Billing,Newport beach,CA,92660.0
+8960208,2026-08-02 17:42:21+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Owosso,MI,48867.0
+8960201,2026-08-02 17:39:35+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Lafayette,IN,47901.0
+8960193,2026-08-02 17:37:17+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Hampstead,NH,3841.0
+8960191,2026-08-02 17:35:26+00:00,Internet,Wireless,Interference,Sacramento,CA,95815.0
+8960190,2026-08-02 17:29:19+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Austin,TX,78701.0
+8960189,2026-08-02 17:28:40+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Baltimore,MD,21223.0
+8960188,2026-08-02 17:28:28+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Sacramento,CA,95815.0
+8960187,2026-08-02 17:28:19+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Benson,AZ,85602.0
+8960185,2026-08-02 17:28:01+00:00,Internet,Cable,Availability,Mebane,NC,27302.0
+8960183,2026-08-02 17:27:32+00:00,Internet,Wireless,Availability,Thornton,CO,80692.0
+8960180,2026-08-02 17:26:38+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Reeds spring,MO,65737.0
+8960177,2026-08-02 17:23:12+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Austin,TX,78701.0
+8960175,2026-08-02 17:19:30+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Chesapeake,VA,23321.0
+8960174,2026-08-02 17:19:14+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Philipsburg,PA,16866.0
+8960170,2026-08-02 17:17:29+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Baltimore,MD,21223.0
+8960169,2026-08-02 17:14:28+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Richmond,UT,84333.0
+8960164,2026-08-02 17:09:04+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Carson ca,CA,90745.0
+8960163,2026-08-02 17:08:31+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Mifflinville,PA,18631.0
+8960162,2026-08-02 17:08:23+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Lewisville,TX,75057.0
+8960157,2026-08-02 17:06:05+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Fort worth,TX,76137.0
+8960155,2026-08-02 17:03:21+00:00,Internet,Cable,Billing,Freehold,NJ,7728.0
+8960154,2026-08-02 17:02:06+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Atlanta,GA,30324.0
+8960152,2026-08-02 17:01:41+00:00,Internet,Cable,Billing,Greeley,CO,80634.0
+8960150,2026-08-02 17:00:58+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Fort riley,KS,66442.0
+8960148,2026-08-02 16:59:22+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Richmond,VA,23224.0
+8960144,2026-08-02 16:56:25+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Woodstock,GA,30188.0
+8960142,2026-08-02 16:54:25+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Chicago,IL,60646.0
+8960140,2026-08-02 16:52:28+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Denver,CO,80236.0
+8960139,2026-08-02 16:50:17+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Dania,FL,33004.0
+8960138,2026-08-02 16:49:21+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Concord,NC,28025.0
+8960137,2026-08-02 16:49:17+00:00,Internet,Cable,Billing,Ojai,CA,93023.0
+8960133,2026-08-02 16:48:39+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Fort riley,KS,66442.0
+8960132,2026-08-02 16:48:36+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Leander,TX,78641.0
+8960128,2026-08-02 16:45:10+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Middleburgh,NY,12122.0
+8960125,2026-08-02 16:40:51+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Grayson,GA,30017.0
+8960124,2026-08-02 16:38:59+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Batavia,OH,45103.0
+8960123,2026-08-02 16:37:52+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Chicago,IL,60647.0
+8960122,2026-08-02 16:36:51+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Ft myers,FL,33905.0
+8960121,2026-08-02 16:33:24+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,High springs,FL,32643.0
+8960118,2026-08-02 16:31:37+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Homestead,FL,33033.0
+8960117,2026-08-02 16:31:31+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Grand blanc,MI,48439.0
+8960115,2026-08-02 16:29:14+00:00,Internet,Fiber,Equipment,New york,NY,10011.0
+8960113,2026-08-02 16:28:28+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Brooklyn,NY,11217.0
+8960112,2026-08-02 16:25:43+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),New kensington,PA,15068.0
+8960111,2026-08-02 16:24:28+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Dahlonega,GA,30533.0
+8960110,2026-08-02 16:24:18+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Providence,RI,2908.0
+8960105,2026-08-02 16:21:29+00:00,Internet,Wireless,Billing,Evanston,WY,82930.0
+8960103,2026-08-02 16:20:30+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Sharon,CT,6069.0
+8960100,2026-08-02 16:15:21+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Oak grove,KY,42262.0
+8960098,2026-08-02 16:14:05+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Ramsey,MN,55303.0
+8960097,2026-08-02 16:13:09+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Meridian,ID,83646.0
+8960095,2026-08-02 16:12:21+00:00,Phone,Internet (VOIP),Availability (including rural call completion),Lake forest,CA,92630.0
+8960091,2026-08-02 16:11:30+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Norwalk,CT,6855.0
+8960089,2026-08-02 16:10:31+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Rochester,MN,55904.0
+8960088,2026-08-02 16:08:00+00:00,Internet,Wireless,Billing,Fort mc coy,FL,32134.0
+8960086,2026-08-02 16:06:33+00:00,Internet,Wireless,Billing,Gaston,SC,29053.0
+8960085,2026-08-02 16:06:13+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Dover,PA,17315.0
+8960083,2026-08-02 16:05:39+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Ciudad de miami,FL,33184.0
+8960079,2026-08-02 16:04:04+00:00,Internet,Cable,Billing,Russell,MA,1071.0
+8960077,2026-08-02 16:03:08+00:00,Internet,Cable,Availability,Chicago heights,IL,60411.0
+8960075,2026-08-02 16:02:47+00:00,Internet,Wireless,Availability,Fontana,CA,92335.0
+8960073,2026-08-02 16:01:44+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Shelley,ID,83274.0
+8960072,2026-08-02 16:00:06+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Kalama,WA,98625.0
+8960070,2026-08-02 15:58:43+00:00,Phone,Wireless (cell phone/other mobile device),Billing,El cerrito,CA,94530.0
+8960065,2026-08-02 15:57:32+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Saint louis,MO,63111.0
+8960062,2026-08-02 15:55:10+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Rochester,MN,55904.0
+8960058,2026-08-02 15:51:48+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Sanford,FL,32771.0
+8960056,2026-08-02 15:51:24+00:00,Internet,Fiber,Availability,Marietta,GA,30062.0
+8960055,2026-08-02 15:51:09+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Camarillo,CA,93012.0
+8960054,2026-08-02 15:51:07+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Brighton,MI,48116.0
+8960052,2026-08-02 15:50:40+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Baltimore,MD,21223.0
+8960050,2026-08-02 15:49:24+00:00,TV,,Availability,Asheville,NC,28806.0
+8960047,2026-08-02 15:46:06+00:00,TV,,Loud Commercials,Elk grove,CA,95758.0
+8960046,2026-08-02 15:46:01+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Dodge center,MN,55927.0
+8960039,2026-08-02 15:40:39+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Hayward,CA,94541.0
+8960035,2026-08-02 15:39:46+00:00,Internet,Wireless,Availability,Peoria,AZ,85345.0
+8960032,2026-08-02 15:39:10+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Milltown,NJ,8850.0
+8960031,2026-08-02 15:37:22+00:00,TV,,Availability,Eureka,MT,59917.0
+8960029,2026-08-02 15:35:10+00:00,Phone,Internet (VOIP),Billing,Owasso,OK,74055.0
+8960027,2026-08-02 15:34:03+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Eatontown,NJ,7724.0
+8960025,2026-08-02 15:33:02+00:00,Internet,DSL,Billing,Franklin,NC,28734.0
+8960024,2026-08-02 15:30:59+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Baltimore,MD,21223.0
+8960023,2026-08-02 15:30:51+00:00,Internet,Wireless,Billing,Los angeles,CA,90019.0
+8960021,2026-08-02 15:27:56+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Hayward,CA,94541.0
+8960019,2026-08-02 15:27:05+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Punta gorda,FL,33983.0
+8960018,2026-08-02 15:27:02+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Kingston,NY,12401.0
+8960015,2026-08-02 15:25:28+00:00,Internet,Cable,Billing,Indianapolis,IN,46220.0
+8960014,2026-08-02 15:24:18+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Vale,OR,97918.0
+8960013,2026-08-02 15:24:05+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Mesquite,TX,75149.0
+8960011,2026-08-02 15:23:45+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Bloomingdale,IL,60108.0
+8960006,2026-08-02 15:21:35+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Pittsburgh,PA,15201.0
+8960004,2026-08-02 15:21:08+00:00,Internet,Wireless,Interference,Washington,DC,20011.0
+8960003,2026-08-02 15:20:53+00:00,Internet,Fiber,Equipment,Louisburg,NC,27549.0
+8959999,2026-08-02 15:19:15+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Irvine,CA,92606.0
+8959998,2026-08-02 15:18:42+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Charlotte,VT,5445.0
+8959994,2026-08-02 15:14:40+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Shelbyville,IN,46176.0
+8959988,2026-08-02 15:10:36+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Whitestone,NY,11357.0
+8959986,2026-08-02 15:08:38+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Manlius,NY,13104.0
+8959985,2026-08-02 15:07:48+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Irvine,CA,92606.0
+8959983,2026-08-02 15:05:27+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959982,2026-08-02 15:04:09+00:00,Internet,Cable,Billing,Hendersonville,NC,28739.0
+8959980,2026-08-02 15:01:21+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Silverhill,AL,36576.0
+8959979,2026-08-02 15:00:00+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Charlotte,NC,28204.0
+8959977,2026-08-02 14:58:21+00:00,Phone,Wired,Availability (including rural call completion),Highlands,NC,28741.0
+8959976,2026-08-02 14:57:22+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Woodstock,GA,30188.0
+8959974,2026-08-02 14:53:56+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Macomb,MI,48044.0
+8959969,2026-08-02 14:43:47+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Cedar park,TX,78613.0
+8959966,2026-08-02 14:40:42+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Columbia,MD,21046.0
+8959964,2026-08-02 14:40:33+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Albuquerque,NM,87108.0
+8959961,2026-08-02 14:36:54+00:00,Internet,Wireless,Billing,Albuquerque,NM,87108.0
+8959959,2026-08-02 14:34:47+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Cedar park,TX,78613.0
+8959957,2026-08-02 14:34:06+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Norman,OK,73072.0
+8959955,2026-08-02 14:33:47+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Independence,KY,41051.0
+8959948,2026-08-02 14:30:36+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Sandston,VA,23150.0
+8959947,2026-08-02 14:28:06+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Independence,KY,41051.0
+8959946,2026-08-02 14:27:18+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Dartmouth,MA,2747.0
+8959944,2026-08-02 14:25:17+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Fieldale,VA,24089.0
+8959941,2026-08-02 14:23:48+00:00,Internet,Wireless,Billing,Albany,NY,12208.0
+8959937,2026-08-02 14:21:57+00:00,Phone,Wired,Billing,Lawrenceville,GA,30045.0
+8959934,2026-08-02 14:13:18+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Lakeway,TX,78734.0
+8959932,2026-08-02 14:09:45+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959931,2026-08-02 14:07:57+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Kennesaw,GA,30144.0
+8959930,2026-08-02 14:01:51+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Eugene,OR,97404.0
+8959927,2026-08-02 13:59:06+00:00,TV,Cable,Billing,East bridgewater,MA,2333.0
+8959926,2026-08-02 13:58:29+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Denver,CO,80232.0
+8959925,2026-08-02 13:54:35+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Union,NJ,7083.0
+8959924,2026-08-02 13:53:27+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Union,NJ,7083.0
+8959921,2026-08-02 13:52:04+00:00,TV,Cable,Billing,Lansing,MI,48912.0
+8959918,2026-08-02 13:50:59+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959917,2026-08-02 13:44:56+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Cambridge,MA,2140.0
+8959916,2026-08-02 13:43:22+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Randallstown,MD,21133.0
+8959914,2026-08-02 13:42:43+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Los angeles,CA,90029.0
+8959912,2026-08-02 13:37:30+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Grandview,MO,64030.0
+8959910,2026-08-02 13:35:55+00:00,Internet,Wireless,Equipment,Montgomery village,MD,20886.0
+8959908,2026-08-02 13:34:38+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Detroit,MI,48238.0
+8959906,2026-08-02 13:33:39+00:00,TV,,Interference,Ny,NY,10451.0
+8959903,2026-08-02 13:30:30+00:00,Internet,Wireless,Billing,Austin,TX,78737.0
+8959902,2026-08-02 13:29:20+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Lenexa,KS,66220.0
+8959900,2026-08-02 13:27:17+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Harrisburg,PA,17111.0
+8959899,2026-08-02 13:27:01+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959896,2026-08-02 13:25:47+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Brockton,MA,2301.0
+8959895,2026-08-02 13:25:04+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Cambridge,MA,2140.0
+8959893,2026-08-02 13:22:22+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959891,2026-08-02 13:19:42+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Columbus,GA,31907.0
+8959890,2026-08-02 13:19:18+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Atlanta,GA,30324.0
+8959887,2026-08-02 13:18:58+00:00,Internet,Cable,Availability,Raleigh,NC,27615.0
+8959884,2026-08-02 13:16:17+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Maiden,NC,28650.0
+8959883,2026-08-02 13:15:20+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Fountain,CO,80817.0
+8959882,2026-08-02 13:13:52+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959880,2026-08-02 13:11:10+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Clermont,FL,34714.0
+8959877,2026-08-02 13:06:52+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959875,2026-08-02 13:03:34+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959874,2026-08-02 13:00:03+00:00,TV,Broadcast,Indecency,Huntsville,AL,35806.0
+8959872,2026-08-02 12:55:13+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Wellington,FL,33414.0
+8959869,2026-08-02 12:53:23+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959867,2026-08-02 12:50:18+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Edwardsville,IL,62025.0
+8959863,2026-08-02 12:46:20+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Temple terrace,FL,33617.0
+8959859,2026-08-02 12:44:03+00:00,Internet,Cable,Availability,Spotsylvania,VA,22553.0
+8959851,2026-08-02 12:18:18+00:00,TV,Satellite,Availability,Putney,VT,5346.0
+8959849,2026-08-02 12:17:43+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Plano,TX,75025.0
+8959846,2026-08-02 12:10:45+00:00,Internet,Fiber,Equipment,Clarkston,WA,99403.0
+8959844,2026-08-02 12:07:17+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959841,2026-08-02 12:01:43+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Cunningham,TN,37052.0
+8959839,2026-08-02 11:50:37+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Gadsden,AL,35901.0
+8959834,2026-08-02 11:23:55+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Roanoke,VA,24019.0
+8959832,2026-08-02 11:05:16+00:00,Phone,Internet (VOIP),Availability (including rural call completion),Midland,MI,48642.0
+8959831,2026-08-02 10:58:17+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959829,2026-08-02 10:55:06+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Albuquerque,NM,87109.0
+8959827,2026-08-02 10:51:14+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Covington,KY,41011.0
+8959826,2026-08-02 10:50:49+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Whitehall,OH,43213.0
+8959821,2026-08-02 10:45:44+00:00,Internet,Cable,Billing,Colonial beach,VA,22443.0
+8959819,2026-08-02 10:44:40+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959814,2026-08-02 10:40:50+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Ruther glen,VA,22546.0
+8959813,2026-08-02 10:38:41+00:00,Internet,Cable,Billing,Cincinnati,OH,45204.0
+8959811,2026-08-02 10:33:52+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Rosemead,CA,91770.0
+8959809,2026-08-02 10:31:16+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959807,2026-08-02 10:20:00+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959806,2026-08-02 10:13:25+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959803,2026-08-02 09:55:55+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Hot springs,NC,28743.0
+8959801,2026-08-02 09:40:19+00:00,Internet,Fiber,Billing,West union,IA,52175.0
+8959799,2026-08-02 09:35:00+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Madison,AL,35758.0
+8959794,2026-08-02 09:13:00+00:00,Internet,Cable,Billing,Amarillo,TX,79109.0
+8959793,2026-08-02 09:12:15+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Florida city,FL,33035.0
+8959787,2026-08-02 08:53:18+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Stillwater,OK,74074.0
+8959786,2026-08-02 08:51:04+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Los angeles,CA,90036.0
+8959784,2026-08-02 08:47:33+00:00,Internet,Cable,Billing,Portland,OR,97232.0
+8959783,2026-08-02 08:36:22+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Los angeles,CA,90028.0
+8959782,2026-08-02 08:00:54+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Paterson,NJ,7522.0
+8959779,2026-08-02 07:54:11+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Sheridan,IL,60551.0
+8959777,2026-08-02 07:38:51+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Avondale,AZ,85392.0
+8959773,2026-08-02 07:34:08+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Portland,OR,97203.0
+8959770,2026-08-02 07:21:47+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Olympia,WA,98512.0
+8959767,2026-08-02 07:14:00+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,San jose,CA,95131.0
+8959764,2026-08-02 07:00:00+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Lakeside,AZ,85929.0
+8959763,2026-08-02 06:56:44+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Belvedere,SC,29842.0
+8959761,2026-08-02 06:54:58+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Lakeside,AZ,85929.0
+8959760,2026-08-02 06:42:36+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Bangor,ME,4401.0
+8959759,2026-08-02 06:41:09+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Ocoee,FL,34761.0
+8959758,2026-08-02 06:39:34+00:00,Internet,Fiber,Availability,Atlanta,GA,30318.0
+8959757,2026-08-02 06:38:19+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Yuma,AZ,85364.0
+8959756,2026-08-02 06:37:59+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Savannah,GA,31419.0
+8959752,2026-08-02 06:34:36+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Corona,NY,11368.0
+8959750,2026-08-02 06:29:17+00:00,Internet,Cable,Billing,Novato,CA,94949.0
+8959748,2026-08-02 06:28:41+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Riverside,CA,92505.0
+8959746,2026-08-02 06:26:44+00:00,Internet,Cable,Speed,Naperville,IL,60564.0
+8959744,2026-08-02 06:16:57+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Perris,CA,92571.0
+8959741,2026-08-02 06:15:28+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Falls church,VA,22041.0
+8959739,2026-08-02 06:13:37+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Tempe,AZ,85281.0
+8959738,2026-08-02 06:08:33+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Brownstown,IL,62418.0
+8959736,2026-08-02 06:05:29+00:00,Internet,Cable,Speed,Apache junction,AZ,85119.0
+8959733,2026-08-02 06:00:25+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Tempe,AZ,85281.0
+8959730,2026-08-02 05:55:56+00:00,TV,,Loud Commercials,Marina del rey,CA,90292.0
+8959724,2026-08-02 05:48:36+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Panama city,FL,32405.0
+8959721,2026-08-02 05:42:29+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Cypress,TX,77433.0
+8959720,2026-08-02 05:41:46+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Houston,TX,77048.0
+8959719,2026-08-02 05:37:44+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Henderson,NV,89052.0
+8959714,2026-08-02 05:32:58+00:00,Internet,Wireless,Equipment,Appomattox,VA,24522.0
+8959710,2026-08-02 05:29:15+00:00,Phone,Wireless (cell phone/other mobile device),Billing,New riegel,OH,44853.0
+8959706,2026-08-02 05:22:10+00:00,Internet,Cable,Billing,Danville,CA,94526.0
+8959702,2026-08-02 05:16:15+00:00,Internet,Cable,Speed,Springfield,OH,45506.0
+8959699,2026-08-02 05:14:07+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Danford,FL,32773.0
+8959696,2026-08-02 05:04:49+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Spring hill,FL,34606.0
+8959694,2026-08-02 05:02:28+00:00,Internet,Cable,Billing,Santa maria,CA,93458.0
+8959692,2026-08-02 04:58:34+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Virginia gardens,FL,33166.0
+8959690,2026-08-02 04:56:02+00:00,Internet,Fiber,Availability,Riverview,FL,33578.0
+8959686,2026-08-02 04:48:36+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Pensacola,FL,32504.0
+8959685,2026-08-02 04:44:19+00:00,TV,Cable,Equipment,Tinley park,IL,60477.0
+8959684,2026-08-02 04:42:51+00:00,Internet,Cable,Billing,Novato,CA,94949.0
+8959682,2026-08-02 04:34:55+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Sherwood,AR,72120.0
+8959680,2026-08-02 04:34:36+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Coldwater,MI,49036.0
+8959676,2026-08-02 04:29:11+00:00,Internet,Fiber,Availability,San diego,CA,92103.0
+8959675,2026-08-02 04:29:08+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Kirkland,WA,98034.0
+8959671,2026-08-02 04:22:32+00:00,TV,,Loud Commercials,Lublin,WI,54447.0
+8959669,2026-08-02 04:17:23+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Springville,AL,35146.0
+8959665,2026-08-02 04:07:53+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Pittsburgh,PA,15234.0
+8959663,2026-08-02 04:07:26+00:00,TV,,Loud Commercials,Lincoln,NE,68521.0
+8959659,2026-08-02 04:03:51+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Atlanta,GA,39349.0
+8959658,2026-08-02 04:03:10+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Seattle,WA,98119.0
+8959657,2026-08-02 04:02:29+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Largo,FL,33771.0
+8959653,2026-08-02 03:59:49+00:00,Internet,Fiber,Speed,Portsmouth,VA,23707.0
+8959651,2026-08-02 03:55:00+00:00,Phone,Wireless (cell phone/other mobile device),Billing,San diego,CA,92101.0
+8959649,2026-08-02 03:54:37+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Belleville,NJ,7109.0
+8959645,2026-08-02 03:51:35+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Garden grove,CA,92840.0
+8959643,2026-08-02 03:49:17+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Oxnard,CA,93036.0
+8959641,2026-08-02 03:47:57+00:00,Internet,Cable,Equipment,Melrose park,IL,60160.0
+8959639,2026-08-02 03:47:31+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Bloomsburg,PA,17815.0
+8959636,2026-08-02 03:42:10+00:00,Internet,Wireless,Billing,Dallas,TX,75204.0
+8959634,2026-08-02 03:39:59+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Burbank,CA,91506.0
+8959633,2026-08-02 03:39:56+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Dickson,TN,37055.0
+8959632,2026-08-02 03:39:41+00:00,Internet,Wireless,Billing,Clinton towhship,MI,48035.0
+8959628,2026-08-02 03:38:25+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Denver,CO,80227.0
+8959623,2026-08-02 03:36:29+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Clarksville,TN,37042.0
+8959619,2026-08-02 03:34:08+00:00,Internet,Wireless,Billing,Jersey city,NJ,7306.0
+8959617,2026-08-02 03:33:41+00:00,Internet,Cable,Equipment,Denver,CO,80227.0
+8959613,2026-08-02 03:31:01+00:00,Internet,Fiber,Availability,Ventura,CA,93001.0
+8959611,2026-08-02 03:30:17+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Rossville,IL,60963.0
+8959609,2026-08-02 03:28:44+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Cumberland,IN,46229.0
+8959605,2026-08-02 03:26:15+00:00,Internet,Wireless,Billing,San diego,CA,92117.0
+8959603,2026-08-02 03:24:53+00:00,Phone,Wired,Unwanted Calls,Tucson,AZ,85742.0
+8959601,2026-08-02 03:19:42+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Bristol,CT,6010.0
+8959599,2026-08-02 03:18:56+00:00,TV,,Loud Commercials,Harper woods,MI,48225.0
+8959596,2026-08-02 03:18:15+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Houston,TX,77033.0
+8959592,2026-08-02 03:12:08+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Freeport,NY,11746.0
+8959590,2026-08-02 03:09:30+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Rincon,GA,31326.0
+8959589,2026-08-02 03:09:19+00:00,Internet,Wireless,Speed,Shelton,WA,98584.0
+8959588,2026-08-02 03:08:38+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Onalaska,WI,54650.0
+8959580,2026-08-02 03:03:19+00:00,Internet,Cable,Availability,Martinez,GA,30907.0
+8959579,2026-08-02 02:58:46+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Bayfield,CO,81122.0
+8959578,2026-08-02 02:56:36+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Bayfield,CO,81122.0
+8959577,2026-08-02 02:56:14+00:00,Internet,Wireless,Availability,Memphis,TN,38109.0
+8959576,2026-08-02 02:54:46+00:00,Internet,Cable,Availability,Frankford,DE,19945.0
+8959575,2026-08-02 02:54:13+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Orlando,FL,32835.0
+8959572,2026-08-02 02:53:16+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Worcester,MA,1602.0
+8959571,2026-08-02 02:52:37+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Natchez,MS,39120.0
+8959568,2026-08-02 02:49:44+00:00,TV,Broadcast,Interference,Bountiful,UT,84010.0
+8959566,2026-08-02 02:45:54+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Milford,CT,6460.0
+8959562,2026-08-02 02:42:11+00:00,Internet,Wireless,Speed,Seattle,WA,98121.0
+8959560,2026-08-02 02:38:54+00:00,Phone,Internet (VOIP),Unwanted Calls,Los angeles,CA,90302.0
+8959557,2026-08-02 02:30:46+00:00,Phone,Wired,Cramming (unauthorized charges on your phone bill),Davis,CA,95616.0
+8959556,2026-08-02 02:30:40+00:00,Internet,Cable,Interference,Haltom city,TX,76137.0
+8959555,2026-08-02 02:29:58+00:00,TV,Cable,Interference,North augusta,SC,29841.0
+8959552,2026-08-02 02:28:00+00:00,Internet,Cable,Billing,Brandon,MS,39047.0
+8959551,2026-08-02 02:27:05+00:00,Internet,Cable,Speed,Chandler,AZ,85224.0
+8959547,2026-08-02 02:23:48+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Charlotte,NC,28255.0
+8959542,2026-08-02 02:22:14+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Los angeles,CA,90043.0
+8959541,2026-08-02 02:21:47+00:00,Internet,Fiber,Speed,Portsmouth,VA,23702.0
+8959535,2026-08-02 02:16:38+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Glendale,AZ,85304.0
+8959534,2026-08-02 02:15:52+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Cypress,TX,77429.0
+8959530,2026-08-02 02:12:37+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Trempealeau,WI,54661.0
+8959529,2026-08-02 02:10:06+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,North little rock,AR,72113.0
+8959528,2026-08-02 02:06:16+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Albuquerque,NM,87111.0
+8959526,2026-08-02 02:04:18+00:00,Internet,Fiber,Availability,Castle rock,CO,80108.0
+8959524,2026-08-02 02:00:11+00:00,Internet,Fiber,Privacy,Roles,OH,43615.0
+8959523,2026-08-02 01:55:19+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Minneapolis,MN,55414.0
+8959521,2026-08-02 01:51:02+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Gainesville,FL,32609.0
+8959519,2026-08-02 01:48:34+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Los angeles,CA,90036.0
+8959518,2026-08-02 01:48:15+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Green cove springs,FL,32043.0
+8959516,2026-08-02 01:41:54+00:00,TV,Satellite,Billing,Brush prairie,WA,98606.0
+8959514,2026-08-02 01:40:37+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Rochester hills,MI,48309.0
+8959512,2026-08-02 01:38:02+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Fairfax,VA,22033.0
+8959510,2026-08-02 01:36:23+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,San francisco,CA,94117.0
+8959508,2026-08-02 01:36:00+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Los angeles,CA,90036.0
+8959507,2026-08-02 01:35:14+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Murrieta,CA,92562.0
+8959503,2026-08-02 01:30:47+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Flossmoor,IL,60422.0
+8959502,2026-08-02 01:29:30+00:00,Internet,Cable,Speed,Haslet,TX,76052.0
+8959498,2026-08-02 01:27:47+00:00,Internet,Cable,Interference,Stamford,CT,6902.0
+8959497,2026-08-02 01:27:22+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Garden cty,GA,31418.0
+8959493,2026-08-02 01:24:07+00:00,Internet,Cable,Billing,Key largo,FL,33037.0
+8959491,2026-08-02 01:21:31+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Pulaski,NY,13142.0
+8959489,2026-08-02 01:20:48+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Archer,FL,32618.0
+8959488,2026-08-02 01:20:17+00:00,Internet,Cable,Speed,Houston,TX,77042.0
+8959487,2026-08-02 01:20:16+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Richmond,TX,77407.0
+8959485,2026-08-02 01:18:46+00:00,Phone,Internet (VOIP),Availability (including rural call completion),San francisco,CA,94123.0
+8959482,2026-08-02 01:13:07+00:00,Internet,Wireless,Interference,Washington,DC,20011.0
+8959481,2026-08-02 01:12:47+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Columbus,OH,43204.0
+8959475,2026-08-02 01:04:07+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Baltimore,MD,21209.0
+8959472,2026-08-02 01:00:17+00:00,Internet,Wireless,Billing,San francisco,CA,94133.0
+8959471,2026-08-02 00:58:50+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Pearland,TX,77584.0
+8959469,2026-08-02 00:57:23+00:00,TV,,Loud Commercials,Howe,TX,75459.0
+8959468,2026-08-02 00:57:21+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Las vegas,NV,89183.0
+8959465,2026-08-02 00:55:58+00:00,Internet,Wireless,Billing,Clarksville,TN,37040.0
+8959462,2026-08-02 00:55:14+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Ontario,CA,91762.0
+8959460,2026-08-02 00:54:31+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Miami,FL,33184.0
+8959458,2026-08-02 00:53:23+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Stroudsburg,PA,18360.0
+8959455,2026-08-02 00:47:21+00:00,Phone,Wireless (cell phone/other mobile device),Billing,San clemente,CA,92673.0
+8959452,2026-08-02 00:45:58+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Gaylord,MI,49735.0
+8959451,2026-08-02 00:45:46+00:00,Internet,Wireless,Interference,Fresno,CA,93727.0
+8959448,2026-08-02 00:43:49+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Mcchord afb,WA,98438.0
+8959447,2026-08-02 00:41:32+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Anchorage,AK,99523.0
+8959444,2026-08-02 00:36:50+00:00,Internet,Cable,Speed,Princeton,WV,24740.0
+8959442,2026-08-02 00:36:18+00:00,Internet,Wireless,Availability,Marion,NC,28752.0
+8959438,2026-08-02 00:30:46+00:00,Internet,Cable,Interference,Louisville,KY,40207.0
+8959436,2026-08-02 00:28:20+00:00,Phone,Wireless (cell phone/other mobile device),Billing,New york,NY,11230.0
+8959435,2026-08-02 00:28:14+00:00,Internet,Wireless,Billing,Mokelumne hill,CA,95245.0
+8959433,2026-08-02 00:24:35+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Lawrence,MA,1841.0
+8959428,2026-08-02 00:21:53+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Eagle bend,MN,56446.0
+8959427,2026-08-02 00:21:01+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Phoenix,AZ,85086.0
+8959423,2026-08-02 00:19:57+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Riverview,FL,33579.0
+8959420,2026-08-02 00:19:47+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Midlothian,VA,23113.0
+8959414,2026-08-02 00:17:46+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Las vegas,NV,89169.0
+8959413,2026-08-02 00:17:41+00:00,Internet,Fiber,Availability,Huntersville,NC,28078.0
+8959409,2026-08-02 00:12:44+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Merced,CA,95348.0
+8959407,2026-08-02 00:11:47+00:00,Internet,Fiber,Availability,Lehigh acres,FL,33972.0
+8959405,2026-08-02 00:07:10+00:00,Internet,Cable,Privacy,Dumont,NJ,7628.0
+8959404,2026-08-02 00:06:26+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Branford,CT,6405.0
+8959402,2026-08-02 00:05:32+00:00,Phone,Internet (VOIP),Unwanted Calls,New york,NY,10011.0
+8959395,2026-08-01 23:58:35+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Whitley city,KY,42653.0
+8959394,2026-08-01 23:55:05+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Atlanta,GA,30315.0
+8959392,2026-08-01 23:52:50+00:00,Internet,Wireless,Billing,Paris,MO,65275.0
+8959388,2026-08-01 23:50:21+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Warfield,KY,41267.0
+8959383,2026-08-01 23:40:29+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Mount pleasant,SC,29464.0
+8959382,2026-08-01 23:39:09+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Columbus,OH,43220.0
+8959381,2026-08-01 23:38:10+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Dingess,WV,25671.0
+8959380,2026-08-01 23:36:42+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Kailua kona,HI,96740.0
+8959378,2026-08-01 23:35:27+00:00,Phone,Internet (VOIP),Unwanted Calls,Atlanta,GA,30324.0
+8959376,2026-08-01 23:34:14+00:00,Phone,Internet (VOIP),Billing,Manheim,PA,17545.0
+8959375,2026-08-01 23:33:56+00:00,Phone,Wired,Number Portability (keeping your number if you change providers),Kentland,IN,47951.0
+8959374,2026-08-01 23:33:46+00:00,Internet,Wireless,Billing,East bethel,MN,55011.0
+8959373,2026-08-01 23:33:42+00:00,Internet,Fiber,Billing,Cathedral city,CA,92234.0
+8959370,2026-08-01 23:32:36+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Phoenix,AZ,85006.0
+8959365,2026-08-01 23:30:55+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Colorado springs,CO,80902.0
+8959364,2026-08-01 23:30:22+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Schaumburg,IL,60194.0
+8959360,2026-08-01 23:27:50+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Reno,NV,89523.0
+8959359,2026-08-01 23:27:18+00:00,Internet,Cable,Billing,Manorville,NY,11949.0
+8959357,2026-08-01 23:26:33+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Celina,TX,75009.0
+8959356,2026-08-01 23:24:55+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Tucson,AZ,85712.0
+8959350,2026-08-01 23:21:41+00:00,Internet,DSL,Billing,Stone mountain,GA,30087.0
+8959348,2026-08-01 23:21:30+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Newtown,CT,6470.0
+8959347,2026-08-01 23:20:25+00:00,TV,,Loud Commercials,Middleborough,MA,2346.0
+8959345,2026-08-01 23:20:16+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Perry,MI,48872.0
+8959338,2026-08-01 23:14:06+00:00,Internet,Cable,Equipment,Wickliffe,OH,44092.0
+8959336,2026-08-01 23:13:08+00:00,Internet,Wireless,Billing,Delray beach,FL,33444.0
+8959334,2026-08-01 23:12:31+00:00,Internet,Fiber,Billing,New york,NY,10028.0
+8959333,2026-08-01 23:12:21+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Waterloo,SC,29384.0
+8959331,2026-08-01 23:11:44+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Stone mountain,GA,30088.0
+8959329,2026-08-01 23:10:10+00:00,Phone,Wired,Number Portability (keeping your number if you change providers),Oklahoma city,OK,73112.0
+8959327,2026-08-01 23:09:31+00:00,Internet,Wireless,Speed,Vicksburg,MS,39180.0
+8959326,2026-08-01 23:09:24+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Miami gardens,FL,33055.0
+8959325,2026-08-01 23:09:08+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Elkhorn,NE,68022.0
+8959322,2026-08-01 23:08:01+00:00,Internet,Fiber,Speed,Portsmouth,VA,23707.0
+8959319,2026-08-01 23:01:57+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Frisco,TX,75035.0
+8959317,2026-08-01 23:00:45+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Waterloo,SC,29384.0
+8959316,2026-08-01 23:00:42+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Bronx,NY,10475.0
+8959311,2026-08-01 22:55:59+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Haslet,TX,76052.0
+8959310,2026-08-01 22:55:57+00:00,Internet,Cable,Availability,Columbus,OH,43228.0
+8959308,2026-08-01 22:55:30+00:00,Internet,Wireless,Billing,Berkeley springs,WV,25411.0
+8959306,2026-08-01 22:51:37+00:00,Internet,Cable,Availability,Haslet,TX,76052.0
+8959301,2026-08-01 22:44:59+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Eugene,OR,97401.0
+8959300,2026-08-01 22:44:23+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959296,2026-08-01 22:40:03+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Broadlands,VA,20148.0
+8959293,2026-08-01 22:38:54+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Peach bottom,PA,17563.0
+8959292,2026-08-01 22:38:53+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Braintree,MA,2184.0
+8959290,2026-08-01 22:37:33+00:00,Phone,,Slamming (change of your carrier without permission),Clearlake,CA,95422.0
+8959289,2026-08-01 22:36:08+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Monroe,NY,10950.0
+8959288,2026-08-01 22:35:48+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Norwalk,CA,90650.0
+8959287,2026-08-01 22:35:29+00:00,Internet,Cable,Interference,San francisco,CA,94110.0
+8959285,2026-08-01 22:34:09+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Warren,OH,44485.0
+8959284,2026-08-01 22:33:39+00:00,Internet,Cable,Availability,Central islip,NY,11722.0
+8959278,2026-08-01 22:29:40+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Norwalk,CA,90650.0
+8959276,2026-08-01 22:27:21+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Irvine,CA,92618.0
+8959275,2026-08-01 22:26:53+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Parkville,MD,21234.0
+8959267,2026-08-01 22:23:19+00:00,Internet,Wireless,Billing,Rancho cucamonga,CA,91737.0
+8959266,2026-08-01 22:23:12+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Victoria,TX,77905.0
+8959265,2026-08-01 22:22:49+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Spokane,WA,99224.0
+8959256,2026-08-01 22:17:10+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Tucson,AZ,85743.0
+8959249,2026-08-01 22:15:17+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Chicago,IL,60655.0
+8959247,2026-08-01 22:14:22+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Ocala,FL,34472.0
+8959246,2026-08-01 22:14:19+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Park city,UT,84098.0
+8959242,2026-08-01 22:13:00+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Springfield,MA,1108.0
+8959238,2026-08-01 22:11:21+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Sacramento,CA,95822.0
+8959237,2026-08-01 22:10:51+00:00,Internet,Cable,Billing,North ridgeville,OH,44039.0
+8959233,2026-08-01 22:09:43+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Thornton,CO,80229.0
+8959232,2026-08-01 22:09:15+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Tahoka,TX,79373.0
+8959228,2026-08-01 22:07:53+00:00,Internet,Wireless,Billing,Orlando,FL,32822.0
+8959224,2026-08-01 22:05:44+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Corsicana,TX,75110.0
+8959223,2026-08-01 22:04:49+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Los angeles,CA,90020.0
+8959219,2026-08-01 22:03:39+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Omaha,NE,68134.0
+8959218,2026-08-01 22:03:01+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Princeton,TX,75407.0
+8959215,2026-08-01 21:57:46+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Lincoln city,OR,97367.0
+8959214,2026-08-01 21:57:36+00:00,Internet,DSL,Billing,Logan,OH,43138.0
+8959212,2026-08-01 21:55:34+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Sandy,UT,84070.0
+8959211,2026-08-01 21:54:43+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Pontiac,MI,48341.0
+8959210,2026-08-01 21:53:33+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Rockford,IL,61107.0
+8959207,2026-08-01 21:49:25+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Sandy,UT,84070.0
+8959205,2026-08-01 21:48:49+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Marshes siding,KY,42631.0
+8959203,2026-08-01 21:47:49+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959202,2026-08-01 21:45:42+00:00,Internet,Fiber,Billing,New orleans,LA,70118.0
+8959200,2026-08-01 21:44:00+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Alliance,OH,44601.0
+8959199,2026-08-01 21:43:50+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Moss beach,CA,94038.0
+8959196,2026-08-01 21:42:22+00:00,TV,Satellite,Billing,Tucson,AZ,85749.0
+8959194,2026-08-01 21:39:59+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Renton,WA,98058.0
+8959192,2026-08-01 21:39:06+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Republic,MO,65738.0
+8959190,2026-08-01 21:38:41+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Port hueneme,CA,93041.0
+8959185,2026-08-01 21:35:47+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,San antonio,TX,78245.0
+8959183,2026-08-01 21:33:52+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Orrville,OH,44667.0
+8959180,2026-08-01 21:31:32+00:00,Phone,Wired,Unwanted Calls,Tucson,AZ,85749.0
+8959179,2026-08-01 21:31:04+00:00,Internet,Fiber,Billing,Reno,NV,89521.0
+8959177,2026-08-01 21:30:38+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Union mills,NC,28167.0
+8959175,2026-08-01 21:28:52+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Fl,FL,33556.0
+8959172,2026-08-01 21:28:01+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Myrtle beach,SC,29588.0
+8959169,2026-08-01 21:27:08+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Seattle,WA,98144.0
+8959167,2026-08-01 21:26:37+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Minden,NV,89423.0
+8959161,2026-08-01 21:25:47+00:00,Internet,DSL,Billing,Neenah,WI,54956.0
+8959159,2026-08-01 21:25:13+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Niota,TN,37826.0
+8959152,2026-08-01 21:23:09+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Horicon,WI,53032.0
+8959151,2026-08-01 21:23:04+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,East hampton,CT,6424.0
+8959150,2026-08-01 21:22:39+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Panama city,FL,32401.0
+8959148,2026-08-01 21:21:33+00:00,Internet,Fiber,Availability,Biloxi,MS,39532.0
+8959147,2026-08-01 21:21:16+00:00,Internet,Wireless,Billing,Columbia,SC,29209.0
+8959145,2026-08-01 21:21:09+00:00,Phone,Internet (VOIP),Unwanted Calls,Oak ridge,NC,27310.0
+8959139,2026-08-01 21:18:10+00:00,Internet,Fiber,Privacy,Bunnell,FL,32110.0
+8959136,2026-08-01 21:16:52+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Manhattan beach,CA,90266.0
+8959135,2026-08-01 21:16:35+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Manhattan beach,CA,90266.0
+8959132,2026-08-01 21:15:45+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Rancho cordova,CA,95670.0
+8959131,2026-08-01 21:14:09+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Glen allen,VA,23059.0
+8959130,2026-08-01 21:12:42+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lockport,IL,60441.0
+8959128,2026-08-01 21:09:07+00:00,Internet,Cable,Equipment,Baltimore,MD,21206.0
+8959126,2026-08-01 21:08:12+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Murrells inlet,SC,29576.0
+8959122,2026-08-01 21:05:43+00:00,Internet,Cable,Speed,Pryor,OK,74361.0
+8959120,2026-08-01 21:00:42+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Los angeles,CA,90037.0
+8959118,2026-08-01 20:59:46+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Reynoldsburg,OH,43068.0
+8959116,2026-08-01 20:59:17+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Cedar park,TX,78613.0
+8959112,2026-08-01 20:58:08+00:00,TV,Satellite,Billing,Novi,MI,48377.0
+8959111,2026-08-01 20:57:54+00:00,Internet,Wireless,Billing,Gahanna,OH,43230.0
+8959110,2026-08-01 20:57:44+00:00,Internet,DSL,Billing,San tan valley,AZ,85142.0
+8959108,2026-08-01 20:57:39+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Washington,DC,20011.0
+8959106,2026-08-01 20:57:14+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Charlotte,NC,28277.0
+8959104,2026-08-01 20:57:08+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Laurel,IN,47024.0
+8959096,2026-08-01 20:48:51+00:00,Internet,Fiber,Equipment,Menifee,CA,92585.0
+8959093,2026-08-01 20:47:44+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Aberdeen ms,MS,39739.0
+8959090,2026-08-01 20:46:29+00:00,Internet,Wireless,Equipment,Largo,FL,33773.0
+8959089,2026-08-01 20:46:10+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Evansville,IN,47715.0
+8959088,2026-08-01 20:46:07+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Abilene,TX,79602.0
+8959084,2026-08-01 20:44:40+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Sioux city,IA,51103.0
+8959083,2026-08-01 20:43:51+00:00,Internet,Cable,Billing,Seattle,WA,98108.0
+8959081,2026-08-01 20:43:33+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Virginia beach,VA,23453.0
+8959078,2026-08-01 20:42:56+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Chicago,IL,60619.0
+8959076,2026-08-01 20:42:28+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Arlington,TX,76002.0
+8959075,2026-08-01 20:42:09+00:00,Internet,Wireless,Equipment,Spring lake,NC,28390.0
+8959061,2026-08-01 20:37:47+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Chicago,IL,60614.0
+8959059,2026-08-01 20:37:12+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Birmingham,AL,35213.0
+8959056,2026-08-01 20:35:21+00:00,Internet,Fiber,Billing,Boston,MA,2109.0
+8959054,2026-08-01 20:34:49+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Muncie,IN,47302.0
+8959051,2026-08-01 20:32:24+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Olathe,KS,66061.0
+8959049,2026-08-01 20:31:40+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Conroe,TX,77304.0
+8959048,2026-08-01 20:31:30+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Los alamos,NM,87544.0
+8959041,2026-08-01 20:29:45+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Fallbrook,CA,92028.0
+8959037,2026-08-01 20:28:27+00:00,Phone,Wired,Interference (including signal jammers),Huntington beach,CA,92646.0
+8959032,2026-08-01 20:27:58+00:00,Phone,Internet (VOIP),Unwanted Calls,Montrose,CO,81403.0
+8959026,2026-08-01 20:26:03+00:00,Phone,Wireless (cell phone/other mobile device),Billing,San diego,CA,92117.0
+8959024,2026-08-01 20:25:21+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Pittsburgh,PA,15204.0
+8959022,2026-08-01 20:24:45+00:00,Internet,Fiber,Billing,Oakland,CA,94612.0
+8959021,2026-08-01 20:24:42+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Montgomery,AL,36109.0
+8959016,2026-08-01 20:22:42+00:00,Phone,Wired,Interference (including signal jammers),Huntington beach,CA,92646.0
+8959014,2026-08-01 20:18:33+00:00,Phone,Wired,Availability (including rural call completion),Caldwell,TX,77836.0
+8959012,2026-08-01 20:17:06+00:00,Internet,Wireless,Availability,Gretna,LA,70053.0
+8959010,2026-08-01 20:15:17+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Bandon,OR,97411.0
+8959007,2026-08-01 20:13:43+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Oconomowoc,WI,53066.0
+8959004,2026-08-01 20:12:59+00:00,Internet,Fiber,Availability,San francisco,CA,94103.0
+8959001,2026-08-01 20:12:26+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Covington,GA,30016.0
+8958996,2026-08-01 20:09:49+00:00,Internet,Cable,Billing,Susanville,CA,96130.0
+8958994,2026-08-01 20:09:34+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Sherwood,AR,72120.0
+8958990,2026-08-01 20:07:59+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Simi valley,CA,93065.0
+8958989,2026-08-01 20:07:55+00:00,Phone,Internet (VOIP),Availability (including rural call completion),Huntersville,NC,28078.0
+8958985,2026-08-01 20:06:23+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Las vegas,NV,89121.0
+8958976,2026-08-01 20:03:51+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Portsmouth,VA,23702.0
+8958974,2026-08-01 20:01:25+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Casper,WY,82601.0
+8958973,2026-08-01 20:01:13+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Greenwood,IN,46142.0
+8958971,2026-08-01 19:58:07+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Michigan city,IN,46360.0
+8958970,2026-08-01 19:57:52+00:00,Internet,Fiber,Equipment,Defiance,MO,63341.0
+8958968,2026-08-01 19:56:27+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Elizabethtown,KY,42701.0
+8958966,2026-08-01 19:55:54+00:00,Internet,Cable,Privacy,Silver spring,MD,20904.0
+8958962,2026-08-01 19:53:48+00:00,Internet,Wireless,Billing,Barstow,CA,92311.0
+8958961,2026-08-01 19:53:40+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Lafayette,IN,47904.0
+8958960,2026-08-01 19:53:29+00:00,Internet,Cable,Billing,Hephzibah,GA,30813.0
+8958958,2026-08-01 19:52:59+00:00,Internet,Wireless,Interference,Phoenix,AZ,85024.0
+8958954,2026-08-01 19:49:11+00:00,TV,,Billing,Brick,NJ,8723.0
+8958951,2026-08-01 19:47:45+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Ponce,PR,730.0
+8958950,2026-08-01 19:47:28+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Hainesville,IL,60030.0
+8958946,2026-08-01 19:45:21+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Commerce,TX,75428.0
+8958945,2026-08-01 19:45:18+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Versailles,KY,40383.0
+8958941,2026-08-01 19:44:40+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Commerce,TX,75428.0
+8958939,2026-08-01 19:44:33+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Jaroso,CO,81138.0
+8958937,2026-08-01 19:44:05+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Tunica,MS,38676.0
+8958936,2026-08-01 19:43:41+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Atlanta,GA,30306.0
+8958931,2026-08-01 19:41:18+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),San antonio,TX,78250.0
+8958930,2026-08-01 19:40:55+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Inglewood,CA,90301.0
+8958927,2026-08-01 19:40:05+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Peru,IN,46970.0
+8958926,2026-08-01 19:40:00+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),San antonio,TX,78250.0
+8958924,2026-08-01 19:38:41+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Rochester,IN,46975.0
+8958921,2026-08-01 19:38:05+00:00,Internet,Fiber,Billing,Rochester hills,MI,48307.0
+8958919,2026-08-01 19:35:40+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Saxonburg,PA,16056.0
+8958918,2026-08-01 19:35:39+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Lakeside,AZ,85929.0
+8958914,2026-08-01 19:34:31+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,North port,FL,34286.0
+8958913,2026-08-01 19:33:39+00:00,Internet,Wireless,Billing,San marcos,TX,78666.0
+8958910,2026-08-01 19:33:23+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Waukon,IA,52172.0
+8958909,2026-08-01 19:33:14+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Oceanside,CA,92054.0
+8958907,2026-08-01 19:32:39+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,South bend,IN,46614.0
+8958904,2026-08-01 19:31:00+00:00,Phone,Wired,Interference (including signal jammers),Aquilla,TX,76622.0
+8958902,2026-08-01 19:30:29+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Seattle,WA,98133.0
+8958901,2026-08-01 19:30:06+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Cheyenne,WY,82009.0
+8958898,2026-08-01 19:27:55+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Silver spring,MD,20910.0
+8958894,2026-08-01 19:24:58+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Purcellville,VA,20132.0
+8958893,2026-08-01 19:24:32+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Land o lakes,FL,34638.0
+8958892,2026-08-01 19:24:32+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Weeki wachee,FL,34614.0
+8958886,2026-08-01 19:22:56+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Hamler,OH,43524.0
+8958885,2026-08-01 19:21:49+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Tuscumbia,AL,35674.0
+8958879,2026-08-01 19:18:33+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Stanford,KY,40484.0
+8958878,2026-08-01 19:17:28+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Cordele,GA,31015.0
+8958877,2026-08-01 19:17:23+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Dallas,TX,75219.0
+8958874,2026-08-01 19:15:16+00:00,Internet,Cable,Interference,Farmville,NC,27828.0
+8958872,2026-08-01 19:11:34+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Westminster,CO,80021.0
+8958870,2026-08-01 19:10:46+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Hamler,OH,43524.0
+8958868,2026-08-01 19:09:44+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Apex,NC,27539.0
+8958865,2026-08-01 19:09:00+00:00,Internet,Satellite,Availability,Fredericksburg,VA,22405.0
+8958862,2026-08-01 19:07:50+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,San jose,CA,95129.0
+8958860,2026-08-01 19:07:34+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Sanford,FL,32771.0
+8958858,2026-08-01 19:07:22+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Clatskanie,OR,97016.0
+8958857,2026-08-01 19:05:57+00:00,Phone,Wireless (cell phone/other mobile device),Billing,San diego,CA,92106.0
+8958853,2026-08-01 19:04:58+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Winchester,TN,37398.0
+8958848,2026-08-01 19:04:17+00:00,Internet,Cable,Billing,Chicago,IL,60642.0
+8958843,2026-08-01 19:01:36+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),New york,NY,10035.0
+8958842,2026-08-01 18:59:49+00:00,Phone,Internet (VOIP),Interference (including signal jammers),Calabasas,CA,91302.0
+8958840,2026-08-01 18:59:22+00:00,Internet,Cable,Billing,Syracuse,NY,13210.0
+8958832,2026-08-01 18:55:58+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Jacksonville,FL,32225.0
+8958831,2026-08-01 18:54:30+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Ontario,CA,91762.0
+8958830,2026-08-01 18:51:39+00:00,Phone,Internet (VOIP),Unwanted Calls,Longmont,CO,80501.0
+8958827,2026-08-01 18:49:16+00:00,Internet,Fiber,Billing,Berea,OH,44017.0
+8958822,2026-08-01 18:45:26+00:00,Internet,Cable,Speed,Olympia,WA,98513.0
+8958820,2026-08-01 18:44:18+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Charlotte,NC,28277.0
+8958819,2026-08-01 18:44:13+00:00,Internet,Cable,Availability,Mesa,AZ,85201.0
+8958817,2026-08-01 18:42:58+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Lucerne valley,CA,92356.0
+8958816,2026-08-01 18:42:13+00:00,Phone,Internet (VOIP),Billing,The colony,TX,75056.0
+8958813,2026-08-01 18:40:50+00:00,TV,Cable,Availability,Melbourne,FL,32940.0
+8958810,2026-08-01 18:39:26+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Palo alto,CA,94301.0
+8958808,2026-08-01 18:38:40+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Jeannette,PA,15644.0
+8958807,2026-08-01 18:37:17+00:00,Internet,Fiber,Billing,Miramar,FL,33027.0
+8958806,2026-08-01 18:36:40+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Fleetwood,NC,28626.0
+8958804,2026-08-01 18:35:53+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Chicago,IL,60643.0
+8958801,2026-08-01 18:35:25+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Fleetwood,NC,28626.0
+8958800,2026-08-01 18:34:28+00:00,Internet,Wireless,Interference,Washington,DC,20011.0
+8958799,2026-08-01 18:34:06+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Fleetwood,NC,28626.0
+8958797,2026-08-01 18:33:54+00:00,Internet,Wireless,Privacy,Charlotte,NC,28212.0
+8958793,2026-08-01 18:32:05+00:00,Internet,Cable,Billing,Truckee,CA,96161.0
+8958790,2026-08-01 18:30:47+00:00,Phone,Wired,Unwanted Calls,Plainfield,IL,60586.0
+8958788,2026-08-01 18:30:17+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Moss bluff,LA,70611.0
+8958783,2026-08-01 18:28:48+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Foristell,MO,63348.0
+8958781,2026-08-01 18:28:31+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Beverly hills,CA,90210.0
+8958779,2026-08-01 18:27:46+00:00,Internet,Wireless,Speed,Greensboro,NC,27409.0
+8958778,2026-08-01 18:27:23+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Brighton,CO,80601.0
+8958777,2026-08-01 18:27:09+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Trenton,NJ,8618.0
+8958772,2026-08-01 18:24:53+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Washington,DC,20015.0
+8958770,2026-08-01 18:24:07+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Apopka,FL,32712.0
+8958767,2026-08-01 18:23:26+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Fleetwood,NC,28626.0
+8958764,2026-08-01 18:22:12+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Fleetwood,NC,28626.0
+8958762,2026-08-01 18:21:05+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Patterson,LA,70392.0
+8958759,2026-08-01 18:19:22+00:00,Internet,Wireless,Billing,Bentonville,AR,72712.0
+8958757,2026-08-01 18:18:09+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lincoln,CA,95648.0
+8958756,2026-08-01 18:18:02+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Highland park,IL,60035.0
+8958754,2026-08-01 18:15:41+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Los angeles,CA,91307.0
+8958753,2026-08-01 18:15:17+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Lady lake,FL,32159.0
+8958752,2026-08-01 18:14:20+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Stony brook,NY,11790.0
+8958749,2026-08-01 18:13:37+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Kingston,PA,18704.0
+8958745,2026-08-01 18:11:37+00:00,Internet,Fiber,Billing,Lincoln,CA,95648.0
+8958743,2026-08-01 18:11:02+00:00,Internet,DSL,Interference,Chicago,IL,60655.0
+8958742,2026-08-01 18:11:02+00:00,Internet,Fiber,Equipment,New hope,MN,55428.0
+8958738,2026-08-01 18:10:31+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Montesano,WA,98563.0
+8958733,2026-08-01 18:06:58+00:00,Internet,Wireless,Availability,Western springs,IL,60558.0
+8958729,2026-08-01 18:05:57+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Rayville,LA,71269.0
+8958727,2026-08-01 18:04:27+00:00,Phone,Internet (VOIP),Unwanted Calls,Bolingbrook,IL,60440.0
+8958724,2026-08-01 18:03:37+00:00,Internet,Cable,Billing,Milford,CT,6460.0
+8958723,2026-08-01 18:03:21+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Union city,NJ,7087.0
+8958721,2026-08-01 18:03:13+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Paterson,NJ,7513.0
+8958719,2026-08-01 18:02:12+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Cincinnati,OH,45224.0
+8958716,2026-08-01 18:00:48+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Laurel,IN,47024.0
+8958715,2026-08-01 18:00:30+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),San antonio,TX,78223.0
+8958710,2026-08-01 17:58:30+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Belle isle,FL,32809.0
+8958709,2026-08-01 17:57:54+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Graham,WA,98338.0
+8958706,2026-08-01 17:57:49+00:00,Internet,Cable,Speed,St augustine,FL,32084.0
+8958705,2026-08-01 17:57:43+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Kingsland,TX,78639.0
+8958701,2026-08-01 17:56:55+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Chicago,IL,60628.0
+8958697,2026-08-01 17:55:49+00:00,Phone,Wired,Unwanted Calls,Elk,CA,95432.0
+8958696,2026-08-01 17:55:38+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Delano,CA,93215.0
+8958694,2026-08-01 17:55:08+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Philipsburg,PA,16866.0
+8958688,2026-08-01 17:50:14+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Thomasville,NC,27360.0
+8958687,2026-08-01 17:49:40+00:00,Internet,Fiber,Billing,Lafayette,IN,47909.0
+8958683,2026-08-01 17:45:01+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),State college,PA,16803.0
+8958680,2026-08-01 17:44:19+00:00,Phone,Wireless (cell phone/other mobile device),Number Portability (keeping your number if you change providers),Daly city,CA,94015.0
+8958678,2026-08-01 17:44:08+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Farmington hills,MI,48335.0
+8958677,2026-08-01 17:44:07+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Hampshire,IL,60140.0
+8958674,2026-08-01 17:43:10+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Brooklyn,NY,11215.0
+8958669,2026-08-01 17:37:07+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Myrtle beach,SC,29579.0
+8958666,2026-08-01 17:35:28+00:00,Phone,Internet (VOIP),Availability (including rural call completion),San diego,CA,92101.0
+8958664,2026-08-01 17:35:17+00:00,Internet,Wireless,Equipment,Rancho mirage,CA,92270.0
+8958661,2026-08-01 17:34:48+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Auburn,WA,98002.0
+8958659,2026-08-01 17:33:55+00:00,Internet,Cable,Billing,Macomb,MI,48044.0
+8958657,2026-08-01 17:32:36+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Leander,TX,78641.0
+8958655,2026-08-01 17:30:40+00:00,Phone,Wired,Availability (including rural call completion),Robbinsville,NC,28771.0
+8958652,2026-08-01 17:27:53+00:00,Phone,Wireless (cell phone/other mobile device),Privacy,Hendersonville,TN,37075.0
+8958649,2026-08-01 17:26:51+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,New york,NY,10030.0
+8958647,2026-08-01 17:24:04+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Bend,OR,97703.0
+8958645,2026-08-01 17:23:36+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Durham,NC,27705.0
+8958643,2026-08-01 17:23:24+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Aurora,OR,97002.0
+8958642,2026-08-01 17:23:15+00:00,Phone,Wireless (cell phone/other mobile device),Cramming (unauthorized charges on your phone bill),Deerfield,IL,60015.0
+8958634,2026-08-01 17:20:51+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,East greenbush,NY,12061.0
+8958633,2026-08-01 17:19:32+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Berlin,CT,6037.0
+8958631,2026-08-01 17:17:47+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Paterson,NJ,7513.0
+8958630,2026-08-01 17:16:22+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Henderson,NC,27536.0
+8958627,2026-08-01 17:13:45+00:00,Internet,Wireless,Speed,Mckinney,TX,75069.0
+8958626,2026-08-01 17:13:32+00:00,TV,Cable,Availability,Marion,IN,46952.0
+8958624,2026-08-01 17:08:43+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Houston,TX,77030.0
+8958623,2026-08-01 17:08:32+00:00,Phone,Wireless (cell phone/other mobile device),Availability (including rural call completion),Noble,IL,62868.0
+8958618,2026-08-01 17:06:04+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,Aurora,OR,97002.0
+8958616,2026-08-01 17:03:23+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Groton,CT,6340.0
+8958615,2026-08-01 17:03:06+00:00,Internet,Fiber,Availability,Sarasota,FL,34242.0
+8958612,2026-08-01 17:02:15+00:00,Phone,Wireless (cell phone/other mobile device),Billing,Paterson,NJ,7513.0
+8958611,2026-08-01 17:01:43+00:00,Phone,Wired,Unwanted Calls,Vienna,VA,22181.0
+8958604,2026-08-01 16:57:34+00:00,Phone,Wireless (cell phone/other mobile device),Billing,San angelo,TX,76903.0
+8958603,2026-08-01 16:57:12+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Toledo,OH,43611.0
+8958601,2026-08-01 16:57:01+00:00,Phone,Wired,Unwanted Calls,Acton,MA,1720.0
+8958600,2026-08-01 16:56:47+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Savannah,GA,31401.0
+8958595,2026-08-01 16:54:58+00:00,Phone,Wireless (cell phone/other mobile device),Equipment,Fort worth,TX,76244.0
+8958592,2026-08-01 16:54:42+00:00,Phone,Wireless (cell phone/other mobile device),Unwanted Calls,San diego,CA,92108.0
+8958591,2026-08-01 16:54:35+00:00,Internet,Cable,Billing,Jonesboro,GA,30238.0
+8958589,2026-08-01 16:53:51+00:00,Phone,Wireless (cell phone/other mobile device),Interference (including signal jammers),Charlotte,NC,28214.0
+8958585,2026-08-01 16:50:43+00:00,Internet,Wireless,Equipment,Los angeles,CA,90019.0
