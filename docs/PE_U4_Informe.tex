@@ -1,0 +1,113 @@
+% !TeX program = pdflatex
+% !BIB program = biber
+\documentclass[11pt,a4paper]{article}
+
+% --- Idioma y codificación -------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{csquotes}
+\usepackage{geometry}
+\geometry{a4paper,margin=2.5cm}
+
+% --- Matemáticas y símbolos -------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,}, per-mode=symbol}
+
+% --- Figuras, tablas, código -------------------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{float}
+
+\lstdefinestyle{python}{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue!70!black}\bfseries,
+    commentstyle=\color{gray!70!black}\itshape,
+    stringstyle=\color{orange!70!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    breaklines=true,
+    showstringspaces=false,
+    frame=single,
+    captionpos=b,
+    tabsize=4,
+}
+\lstset{style=python}
+
+% --- Bibliografía (biblatex, estilo IEEE) -----------------------------------
+\usepackage[
+    backend=biber,
+    style=ieee,
+    sorting=none,
+    maxbibnames=99,
+]{biblatex}
+\addbibresource{references_U4.bib}
+
+% --- Enlaces -----------------------------------------------------------------
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage[capitalise]{cleveref}
+
+% --- Encabezados ---------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\fancyhead[L]{GA-SUM-05 / PE-U4 --- Ley de Amdahl con Apache Spark}
+\fancyhead[R]{Equipo ACC --- Aplicaciones Distribuidas (ISR-701)}
+\fancyfoot[C]{\thepage}
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+% =============================================================================
+    \begin{titlepage}
+        \centering
+        \vspace*{1cm}
+        {\large\textsc{Universidad Técnica Estatal de Quevedo}}\\[0.2cm]
+        {\normalsize Facultad de Ciencias de la Computación}\\
+        {\normalsize Carrera de Ingeniería de Software}\\[1.5cm]
+
+        {\small INSTRUMENTO DE EVALUACIÓN --- INFORME TÉCNICO}\\[0.3cm]
+        \rule{\linewidth}{0.5pt}\\[0.4cm]
+        {\Large\bfseries GA-SUM-05 / PE-U4 --- Práctica Experimental Unidad 4}\\[0.4cm]
+        {\large Procesamiento Distribuido con Apache Spark: comprobación experimental de la Ley de
+        Amdahl aplicada al Proyecto Fin de Curso}\\[0.4cm]
+        \rule{\linewidth}{0.5pt}\\[1.2cm]
+
+        \begin{tabular}{ll}
+            \textbf{Asignatura:}          & Aplicaciones Distribuidas (ISR-701) \\
+            \textbf{Unidad:}               & Unidad 4 --- Cómputo Paralelo y Distribuido \\
+            \textbf{Período académico:}    & 2026--2027 PPA \\
+            \textbf{Docente responsable:}  & Gleiston C. Guerrero-Ulloa, M.Sc. \\
+        \end{tabular}
+
+        \vspace{1.2cm}
+        \textbf{Equipo:} D --- ACC - Soporte Técnico ISP\\[0.6cm]
+
+        \begin{tabular}{ll}
+            Alvarez Parraga Jeremy Alexis &
+            \href{mailto:jalvarezp3@uteq.edu.ec}{\texttt{jalvarezp3@uteq.edu.ec}} \\
+
+            Aucatoma Celorio Jhinson Stalyn &
+            \href{mailto:jaucatomac@uteq.edu.ec}{\texttt{jaucatomac@uteq.edu.ec}} \\
+
+            Carpio Mendoza Carlos Jose &
+            \href{mailto:carlospatroner@gmail.com}{\texttt{carlospatroner@gmail.com}} \\
+        \end{tabular}
+
+        \vfill
+        {\small Repositorio: \url{https://github.com/carlospatroner-boop/pe-u4-spark-Soporte-Tecnico-ISP}}\\[0.3cm]
+    \end{titlepage}
+
+\end{document}
