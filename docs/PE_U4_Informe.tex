@@ -307,4 +307,68 @@ licencia y volumen se documentan en detalle en la \Cref{sec:procedimiento}.
     1000, muy por encima de lo que la Ley de Amdahl predeciría para
     fracciones seriales de apenas 0.4--0.8\,\%~\autocite{gustafson1988}.
 
+    \subsubsection{Forma inversa de la fracción serial: la métrica de Karp-Flatt}
+
+    Las ecuaciones~\eqref{eq:amdahl} y~\eqref{eq:gustafson} permiten
+    predecir el speedup a partir de una fracción serial conocida, pero no
+    resuelven el problema inverso: estimar esa fracción a partir de
+    mediciones experimentales de speedup. Karp y Flatt abordan esta
+    limitación proponiendo la \emph{fracción serial experimentalmente
+    determinada}, derivada algebraicamente de la Ley de
+    Amdahl~\autocite{karpflatt1990}. Despejando $p$ de~\eqref{eq:amdahl} para
+    una medición con $N$ unidades y speedup observado $S$ se obtiene
+
+    \begin{equation}
+        p = \frac{\dfrac{1}{S} - \dfrac{1}{N}}{1 - \dfrac{1}{N}}, \qquad N > 1.
+        \label{eq:karp-flatt}
+    \end{equation}
+
+    Karp y Flatt argumentan que esta métrica es más informativa que el
+    speedup o la eficiencia por separado porque, en un sistema ideal, debería
+    permanecer aproximadamente constante al variar $N$; cualquier desviación
+    sistemática de esa constancia delata sobrecostos que ni el speedup ni
+    la eficiencia revelan por sí solos, como el desbalance de
+    carga entre procesadores, la sobrecarga de sincronización, la
+    contención de memoria o la reducción del tamaño efectivo de los
+    vectores al fragmentar el trabajo~\autocite{karpflatt1990}. Los propios
+    autores ilustran el poder diagnóstico de la métrica con datos de un
+    Cray Y-MP/8, donde la fracción serial se mantiene prácticamente
+    constante (en torno a 0.021--0.024) para distintos números de
+    procesadores, lo que permite concluir que la pérdida de eficiencia
+    observada se debe al paralelismo intrínsecamente limitado del
+    software y no a sobrecostos adicionales del
+    sistema~\autocite{karpflatt1990}.
+
+    \paragraph{Advertencia metodológica.} La magnitud que se despeja
+    mediante~\eqref{eq:karp-flatt} no es la fracción serial algorítmica
+    —es decir, la porción de código que un análisis estático del
+    algoritmo revelaría como no paralelizable—, sino la \emph{fracción no
+    escalable observada}, que agrega además la sobrecarga real de
+    planificación, serialización y \emph{shuffle} introducida por el
+    motor de ejecución~\autocite{karpflatt1990}. Confundir ambas magnitudes es
+    un error conceptual: una fracción serial observada alta puede deberse
+    tanto a limitaciones intrínsecas del algoritmo como a overhead de
+    infraestructura, y solo un análisis diagnóstico como el propuesto por
+    Karp y Flatt permite distinguir entre ambas causas.
+
+    \subsubsection{Representación gráfica del speedup}
+
+    La Figura~\ref{fig:speedup_amdahl} contrasta la curva de
+    speedup~\eqref{eq:amdahl} frente al número de procesadores $N$ para
+    fracciones paralelizables $p = 0{,}5$, $0{,}75$, $0{,}9$ y $0{,}95$,
+    generada con \texttt{matplotlib} a partir del script
+    \texttt{src/graficas.py}. Se observa que, incluso con una fracción
+    paralelizable tan alta como $p = 0{,}95$, el speedup se satura
+    alrededor de $S_{\max} = 1/(1-0{,}95) = 20$, lo que ilustra de forma
+    directa el límite impuesto por la ecuación~\eqref{eq:amdahl-max}.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{resultados/figuras/fig2_speedup.png}
+        \caption{Speedup teórico según la Ley de Amdahl para
+            $p = 0{,}5,\ 0{,}75,\ 0{,}9,\ 0{,}95$ frente al número de
+            procesadores $N$.}
+        \label{fig:speedup_amdahl}
+    \end{figure}
+
 \end{document}
