@@ -109,6 +109,33 @@
         \vfill
         {\small Repositorio: \url{https://github.com/carlospatroner-boop/pe-u4-spark-Soporte-Tecnico-ISP}}\\[0.3cm]
     \end{titlepage}
+    % ============================================================
+% Sección: secciones/introduccion
+% ============================================================
+\section{Introducción}
+\label{sec:introduccion}
+
+El cómputo paralelo y distribuido dejó de ser una especialización de laboratorios de alto
+rendimiento para convertirse en infraestructura estándar de cualquier organización que procese
+datos a una escala en la que un único proceso secuencial ya no ofrece una latencia aceptable.
+Apache Spark es, en la actualidad, el motor de referencia para esta clase de procesamiento por
+su modelo de evaluación perezosa sobre RDDs y DataFrames, su tolerancia a fallos basada en
+\emph{lineage} en vez de replicación, y su capacidad de unificar procesamiento por lotes,
+consultas SQL y aprendizaje automático sobre la misma
+abstracción~\autocite{zaharia2012,armbrust2015,tang2020}. Sin embargo, la ganancia de rendimiento
+que un motor distribuido aporta frente a un procesamiento secuencial no es automática ni
+universal: depende del volumen de datos, de la naturaleza de cada operación (si requiere o no
+\emph{shuffle} entre particiones) y, de manera fundamental, de la fracción del trabajo total que
+efectivamente puede paralelizarse --el objeto de estudio de la Ley de
+Amdahl~\autocite{amdahl1967}--.
+
+Esta práctica tiene como objetivo comprobar experimentalmente esa ley: implementar un
+\emph{pipeline} idéntico en pandas (secuencial) y en PySpark (distribuido), medir sus tiempos de
+ejecución bajo un protocolo riguroso, y contrastar el \emph{speedup} observado con el que predice
+el modelo teórico de Amdahl --y, complementariamente, con la reformulación de escalado de
+Gustafson-Barsis, más adecuada para interpretar el beneficio del paralelismo cuando el volumen de
+datos crece con el tiempo, como ocurre en la operación real de un
+ISP~\autocite{gustafson1988}--.
 \subsection{Contexto: el equipo y el dominio de referencia}
 \label{sec:contexto-pfc}
 
