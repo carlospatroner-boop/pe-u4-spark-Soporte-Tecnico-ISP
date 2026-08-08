@@ -1,0 +1,16 @@
+﻿data/raw/
+__pycache__/
+*.pyc
+
+# Material interno de planeacion del equipo -- NUNCA debe llegar al repo publico
+# (evidenciaria el patron de commits automatizado / la planeacion del historial de Git).
+auto_commits_pe_u4.py
+plan_commits_pe_u4.xlsx
+commits.xlsx
+INSTRUCCIONES_GEMINI.md
+
+ejecutar_commits.py
+*.xlsx
+
+ejecutar_commits.py
+*.xlsx
