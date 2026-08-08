@@ -1,0 +1,66 @@
+{
+  "T1_filtrado": {
+    "filas_pandas": 558289,
+    "filas_pyspark": 558289,
+    "cardinalidad_igual": true,
+    "distribucion_issue_type_pandas": {
+      "Phone": 454665,
+      "Internet": 103624
+    },
+    "distribucion_issue_type_pyspark": {
+      "Phone": 454665,
+      "Internet": 103624
+    }
+  },
+  "T2_agrupacion": {
+    "grupos_pandas": 57,
+    "grupos_pyspark": 57,
+    "cardinalidad_igual": true,
+    "suma_total_tickets_pandas": 600000,
+    "suma_total_tickets_pyspark": 600000,
+    "suma_igual": true,
+    "estados_coinciden": true
+  },
+  "T3_join": {
+    "filas_pandas": 600000,
+    "filas_pyspark": 600000,
+    "cardinalidad_igual": true,
+    "distribucion_region_pandas": {
+      "South": 242878,
+      "West": 151642,
+      "Midwest": 103414,
+      "Northeast": 100299,
+      "Territorio": 1586
+    },
+    "distribucion_region_pyspark": {
+      "South": 242878,
+      "West": 151642,
+      "Midwest": 103414,
+      "Northeast": 100299,
+      "Territorio": 1586
+    }
+  },
+  "T4_columna_derivada": {
+    "filas_pandas": 600000,
+    "filas_pyspark": 600000,
+    "cardinalidad_igual": true,
+    "distribucion_prioridad_pandas": {
+      "BAJA": 276702,
+      "MEDIA": 180288,
+      "ALTA": 143010
+    },
+    "distribucion_prioridad_pyspark": {
+      "BAJA": 276702,
+      "MEDIA": 180288,
+      "ALTA": 143010
+    }
+  },
+  "T5_top_n": {
+    "filas_pandas": 1000,
+    "filas_pyspark": 1000,
+    "cardinalidad_igual": true,
+    "primer_id_pandas": 8961072,
+    "primer_id_pyspark": 8961072,
+    "primer_id_igual": true
+  }
+}
