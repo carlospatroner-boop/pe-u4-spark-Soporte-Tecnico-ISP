@@ -566,4 +566,45 @@ menor tamaño~\autocite{tekdogan2021,utami2024}.
     duplicación de lógica entre las capas batch y de velocidad a costa de
     depender por completo de la robustez y capacidad de reprocesamiento
     del motor de \emph{streaming} elegido~\autocite{abughazala2024,ganachari2020}.
+    % ============================================================
+% Sección: secciones/procedimiento
+% ============================================================
+\section{Procedimiento aplicado}
+\label{sec:procedimiento}
+
+\subsection{Preparación del entorno y del conjunto de datos}
+\label{sec:procedimiento-entorno}
+
+Dado que PySpark en Windows requiere \texttt{winutils.exe} y librerías nativas de Hadoop
+frágiles de instalar, el equipo ejecutó todo el \emph{pipeline} dentro de un contenedor Docker
+Linux (\texttt{eclipse-temurin:21-jdk-jammy} con Java 21, Python 3.10, PySpark 4.1.2, pandas,
+numpy, matplotlib, scipy y Jupyter), garantizando que el entorno sea idéntico en cualquier
+máquina del equipo.
+
+El conjunto de datos se extrajo de \emph{CGB --- Consumer Complaints Data} de la FCC
+(\url{https://opendata.fcc.gov/d/3xyp-aqkj}), un portal de datos abiertos gubernamental con
+licencia \textbf{Public Domain (U.S. Government Work)}. El portal expone 3{,}599{,}354 registros
+totales (verificado el día de la descarga con \texttt{\$select=count(*)} sobre el mismo
+\emph{endpoint}); de ellos se extrajeron los \textbf{600{,}000 tickets más recientes}
+restringidos a las tres categorías directamente relacionadas con servicios de un ISP
+(\emph{Phone}, \emph{Internet}, \emph{TV}), vía la API pública SODA (Socrata Open Data API),
+paginada en bloques de 50{,}000 filas:
+
+\begin{lstlisting}[language=bash,caption={Extracción del dataset vía la API SODA de la FCC (paginada en bloques de 50,000 filas).},label={lst:extraccion-dataset}]
+GET https://opendata.fcc.gov/resource/3xyp-aqkj.csv
+    ?$select=id,ticket_created,issue_type,method,issue,city,state,zip
+    &$where=issue_type in('Phone','Internet','TV')
+    &$order=ticket_created DESC
+    &$limit=50000&$offset={0,50000,...,550000}
+\end{lstlisting}
+
+El extracto resultante tiene 600{,}000 filas, 8 columnas, 69\,MB en disco, y abarca el rango de
+fechas del 2024-09-06 al 2026-08-03. Contiene valores nulos reales (no inducidos) en
+\texttt{method} (15{,}466), \texttt{issue} (2{,}456), \texttt{city} (694), \texttt{state} (181)
+y \texttt{zip} (192), que se aprovechan como condición de filtrado en T1. El detalle completo
+--incluyendo la distribución por categoría y por estado-- se documenta en
+\texttt{data/README\_dataset.md} del repositorio. El conjunto se cargó y verificó tanto en
+pandas (\texttt{pd.read\_csv}) como en un DataFrame de PySpark (\texttt{spark.read.csv} con
+\texttt{inferSchema}), confirmando en ambos motores 600{,}000 filas y el mismo esquema inferido.
+
 \end{document}
