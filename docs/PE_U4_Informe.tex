@@ -921,4 +921,39 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
     decidió difundir la tabla de regiones (56 filas) en lugar de aplicar un \emph{shuffle} simétrico
     sobre ambos lados del \emph{join}.
 
+    % ============================================================
+% Sección: secciones/analisis_critico
+% ============================================================
+    \section{Análisis crítico}
+    \label{sec:analisis-critico}
+
+    Los resultados de la \Cref{sec:resultados} obligan a matizar la premisa con la que muchos
+    equipos abordan un ejercicio de \enquote{comprobar la Ley de Amdahl con Spark}: la ley predice
+    un límite superior al \emph{speedup} alcanzable, no garantiza que ese \emph{speedup} sea
+    positivo en primer lugar. A 600{,}000 filas, la fracción no escalable observada
+    ($p\approx0.46$) no proviene principalmente de un cuello de botella algorítmico dentro de las
+    transformaciones --T1 es un filtro trivial, T5 es un ordenamiento sobre una columna indexable--
+    sino de la sobrecarga fija de coordinar un motor distribuido: arranque de la JVM y de la sesión
+    de Spark (medido, pero fuera del cronómetro de cada transformación individual), planificación de
+    \emph{tasks} por el driver, serialización de datos entre el proceso Python y la JVM a través de
+    Py4J, y para T2/T3 específicamente, el costo de \emph{shuffle} incluso cuando --como reveló la
+    evidencia de Spark UI-- Spark opta por difundir la tabla pequeña en vez de mezclar ambos lados.
+    Esta sobrecarga es esencialmente \emph{constante} por transformación, independiente del volumen
+    de datos dentro de un rango razonable, mientras que el tiempo de pandas crece linealmente con
+    las filas; la consecuencia directa es que existe un volumen de datos de cruce por debajo del cual
+    pandas gana y por encima del cual Spark gana, discutido cuantitativamente en la Pregunta 2 del
+    Anexo A.
+
+    Un segundo punto crítico es la limitación del entorno de medición. El equipo no dispuso de un
+    clúster Spark multinodo real, sino de \texttt{local[N]} sobre una única máquina con recursos
+    limitados (documentado en la configuración efectiva de cada sesión). Esto tiene dos
+    consecuencias metodológicas que deben declararse con honestidad: primero, el parámetro
+    \texttt{spark.executor.instances} exigido por la guía se configuró pero \emph{no tiene efecto
+    real} en modo local, donde el paralelismo depende exclusivamente del número de hilos de
+    \texttt{local[N]}; segundo, con solo tres puntos de medición ($N=1,2,4$) y una anomalía de
+    sobrecarga entre $N=1$ y $N=2$, el ajuste de $p$ se apoya en la práctica en un único punto
+    informativo ($N=4$), lo que introduce más incertidumbre de la deseable en una estimación que,
+    idealmente, se ajustaría con más réplicas y más niveles de $N$ sobre un clúster real. El ajuste
+    de mínimos cuadrados sobre los tres puntos coincidió con el cálculo algebraico puntual dentro de
+    0.2\%, lo que da cierta confianza en la estimación, pero no elimina esta limitación de fondo.
 \end{document}
