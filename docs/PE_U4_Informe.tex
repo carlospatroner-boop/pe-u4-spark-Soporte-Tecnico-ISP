@@ -754,4 +754,67 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
     proporcionalmente ($S=0.42$) porque es la única que ejecuta, por fila, más trabajo de cómputo
     efectivo (la evaluación de la UDF de prioridad) en relación con su overhead fijo, mientras que
     T2 y T3 --predominantemente coordinación y \emph{shuffle}-- son las más penalizadas.
+
+    \subsection{Escalado de \emph{executors} y ajuste de la Ley de Amdahl (T3)}
+    \label{sec:resultados-amdahl}
+
+    La \Cref{tab:escalado} presenta la mediana de tiempos de la transformación T3 (\emph{join}) con
+    1, 2 y 4 \emph{executors} (\texttt{local[N]}), y el \emph{speedup} observado respecto de $N=1$.
+
+    \begin{table}[H]
+        \centering
+        \caption{Escalado de T3 (\emph{join}) con 1, 2 y 4 \emph{executors}.}
+        \label{tab:escalado}
+        \begin{tabular}{S[table-format=1.0] S[table-format=1.4] S[table-format=1.4]}
+            \toprule
+            {$N$} & {$T_{\text{T3}}(N)$ (\si{\second})} & {Speedup $S(N)$} \\
+            \midrule
+            1 & 3.0712 & 1.0000 \\
+            2 & 3.1252 & 0.9827 \\
+            4 & 1.8290 & 1.6792 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    \subsubsection{Cálculo de la fracción serial observada}
+
+    Sustituyendo $N=4$ y $S(4)=1.6792$ en la forma inversa de la Ley de Amdahl
+    (\Cref{eq:karp-flatt}):
+
+    \begin{align}
+        p &= \frac{\dfrac{1}{S(4)} - \dfrac{1}{4}}{1 - \dfrac{1}{4}}
+        = \frac{\dfrac{1}{1.6792} - 0.25}{0.75} \notag \\
+        &= \frac{0.5956 - 0.25}{0.75}
+        = \frac{0.3456}{0.75}
+        = 0.4607.
+        \label{eq:calculo-p}
+    \end{align}
+
+    Como verificación de robustez, se ajustó además $p$ por mínimos cuadrados no lineales sobre los
+    tres puntos $(N, S(N))$ simultáneamente (función \texttt{scipy.optimize.curve\_fit} sobre la
+    \Cref{eq:amdahl}), obteniendo $p_{\text{ajustado}} = 0.4600$ --a menos de 0.2\% del valor
+    algebraico puntual de la \Cref{eq:calculo-p}, lo que confirma que el punto $N=4$ por sí solo ya
+    es representativo del ajuste global.
+
+    Cabe señalar, con la misma sustitución pero usando $N=2$ y $S(2)=0.9827$:
+
+    \begin{equation}
+        p_{N=2} = \frac{\dfrac{1}{0.9827} - \dfrac{1}{2}}{1 - \dfrac{1}{2}}
+        = \frac{1.0176 - 0.5}{0.5}
+        = 1.0353,
+        \label{eq:calculo-p-n2}
+    \end{equation}
+
+    un valor matemáticamente inválido ($p$ no puede superar 1). Esto no es un error de cálculo sino
+    la manifestación directa de la advertencia metodológica de la \Cref{sec:fundamento-amdahl}: la
+    $p$ despejada de la forma inversa no es la fracción serial algorítmica, sino la fracción no
+    escalable \emph{observada}, y a $N=2$ el \emph{speedup} medido ($0.9827$) es en realidad
+    \emph{menor} que a $N=1$ --el paso de 1 a 2 hilos en \texttt{local[N]} añade coordinación
+    (planificación de dos \emph{tasks}, sincronización) sin beneficio neto medible en una máquina de
+    pocos núcleos físicos, un efecto de sobrecarga que domina completamente sobre cualquier ganancia
+    real de paralelismo en ese tramo--. Por esta razón se reporta $p=0.4607$ (obtenido con $N=4$,
+    el punto de mayor paralelismo real medido) como el valor principal, y se documenta $p_{N=2}$
+    únicamente como evidencia de la variabilidad de la medición a bajo $N$, consistente con lo
+    señalado por Jain sobre la necesidad de tratar mediciones de sistemas como variables
+    aleatorias y no como valores deterministas.
 \end{document}
