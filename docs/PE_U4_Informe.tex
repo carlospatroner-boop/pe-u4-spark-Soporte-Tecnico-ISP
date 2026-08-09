@@ -370,5 +370,111 @@ licencia y volumen se documentan en detalle en la \Cref{sec:procedimiento}.
             procesadores $N$.}
         \label{fig:speedup_amdahl}
     \end{figure}
+% =====================================================================
+% 5.2 Paradigma MapReduce y Apache Hadoop
+% =====================================================================
 
+    \subsection{Paradigma MapReduce y Apache Hadoop}
+    \label{sec:fundamento-mapreduce}
+
+    \subsubsection{El modelo de programación MapReduce}
+
+    Dean y Ghemawat propusieron en 2008 una abstracción de programación
+    que permite expresar cómputos distribuidos a gran escala mediante dos
+    funciones definidas por el usuario, ocultando los detalles de
+    paralelización, tolerancia a fallos, distribución de datos y balanceo
+    de carga que antes debían codificarse manualmente en cada
+    aplicación~\autocite{dean2008,white2015}. Formalmente, la función
+    \texttt{map} recibe un par clave/valor de entrada y produce una lista
+    de pares clave/valor intermedios, mientras que la función
+    \texttt{reduce} recibe una clave intermedia junto con la lista de
+    valores asociados a ella y produce una lista de salida, típicamente de
+    menor tamaño:
+
+    \begin{lstlisting}[caption={Firmas del modelo MapReduce},label={lst:mapreduce-sig}]
+map    (k1, v1)        -> list(k2, v2)
+reduce (k2, list(v2))  -> list(v2)
+    \end{lstlisting}
+
+    Esta separación de responsabilidades es la que permite que el motor
+    de ejecución subyacente distribuya automáticamente las tareas
+    \texttt{map} y \texttt{reduce} entre cientos o miles de máquinas sin
+    que el programador deba razonar explícitamente sobre la infraestructura
+    distribuida~\autocite{dean2008}.
+
+    \subsubsection{Flujo de ejecución: split, map, shuffle, sort y reduce}
+
+    El flujo de ejecución de un job MapReduce comienza cuando la
+    biblioteca fragmenta los archivos de entrada en un conjunto de
+    \emph{splits} de tamaño configurable (típicamente entre 16 y 64 MB),
+    lo que habilita el procesamiento paralelo desde el primer
+    paso~\autocite{dean2008}. Un proceso maestro coordina la asignación de
+    tareas \texttt{map} y \texttt{reduce} a los nodos trabajadores
+    disponibles en el clúster. Cada trabajador \texttt{map} procesa su
+    fragmento de entrada y genera pares clave/valor intermedios, que se
+    almacenan primero en memoria y periódicamente se vuelcan a disco local,
+    particionados según la función de particionado en tantas regiones
+    como tareas \texttt{reduce} existan~\autocite{dean2008,white2015}.
+
+    La fase de \emph{shuffle} transfiere esos datos intermedios desde los
+    nodos \texttt{map} hacia los nodos \texttt{reduce} correspondientes, y
+    la fase de \emph{sort} ordena los datos recibidos por clave para que
+    todas las ocurrencias de una misma clave queden agrupadas antes de
+    invocar la función \texttt{reduce}; cuando el volumen de datos
+    intermedios excede la memoria disponible se recurre a un algoritmo de
+    ordenamiento externo~\autocite{dean2008}. Finalmente, cada tarea
+    \texttt{reduce} itera sobre los datos ordenados y, para cada clave
+    única, invoca la función de reducción del usuario, cuya salida se
+    concatena en el archivo de resultados de esa
+    partición~\autocite{dean2008,white2015}.
+
+    \subsubsection{Arquitectura de Hadoop: HDFS y YARN}
+
+    Hadoop implementa el paradigma MapReduce sobre dos capas
+    complementarias. HDFS (\emph{Hadoop Distributed File System*}) sigue
+    una arquitectura maestro-trabajador en la que un único
+    \texttt{NameNode} mantiene los metadatos del sistema de
+    archivos —la jerarquía de directorios y la ubicación física de cada
+    bloque— mientras que múltiples \texttt{DataNode} almacenan físicamente
+    los bloques de datos, típicamente replicados tres veces para
+    tolerancia a fallos~\autocite{shvachko2010,white2015}. Los
+    \texttt{DataNode} informan periódicamente al \texttt{NameNode} de su
+    estado mediante señales de \emph{heartbeat}; si el maestro deja de
+    recibirlas durante un intervalo configurado, reprograma la creación de
+    nuevas réplicas de los bloques afectados en otros
+    nodos~\autocite{shvachko2010}. Este diseño maestro-trabajador, junto con
+    el uso de bloques grandes y la asunción de que las fallas de hardware
+    son la norma y no la excepción, proviene directamente de las
+    decisiones de diseño del Google File System, que HDFS adapta a un
+    entorno de código abierto~\autocite{ghemawat2003,shvachko2010}.
+
+    Sobre esa capa de almacenamiento opera YARN (\emph{Yet Another
+    Resource Negotiator}), que desacopla la gestión de recursos del
+    clúster del modelo de programación específico que se ejecuta sobre
+    él~\autocite{vavilapalli2013,white2015}. Un \texttt{ResourceManager}
+    central arbitra los recursos entre las aplicaciones que compiten por
+    el clúster y asigna \emph{contenedores} —paquetes lógicos de CPU y
+    memoria— según la demanda; en cada nodo, un \texttt{NodeManager} local
+    gestiona el ciclo de vida de esos contenedores, mientras que un
+    \texttt{ApplicationMaster} específico de cada aplicación negocia
+    recursos con el \texttt{ResourceManager} y coordina la ejecución de
+    sus propias tareas~\autocite{vavilapalli2013}. Esta separación es la que
+    permite que MapReduce deje de ser el único modelo de programación
+    soportado por Hadoop y que otros motores —como Spark, que se aborda en
+    la Sección~\ref{sec:fundamento-spark}— puedan ejecutarse sobre la misma
+    infraestructura de recursos~\autocite{vavilapalli2013,white2015}.
+
+    \subsubsection{Ventajas frente al procesamiento distribuido manual}
+
+    Antes de MapReduce, cada aplicación de procesamiento distribuido debía
+    implementar por separado su propia lógica de paralelización,
+    distribución de datos, tolerancia a fallos y balanceo de carga, lo que
+    oscurecía cómputos conceptualmente simples con grandes volúmenes de
+    código de infraestructura~\autocite{dean2008}. Al restringir el modelo de
+    programación a las funciones \texttt{map} y \texttt{reduce}, la
+    biblioteca reduce drásticamente la cantidad de código necesario —Dean
+    y Ghemawat reportan una reducción de miles de líneas de C++ a unos
+    cientos al reexpresar una fase de indexación con este
+    modelo— y hace el paralelismo accesible incluso a programadores sin
+    experiencia previa en sistemas distribuidos~\autocite{dean2008,white2015}.
 \end{document}
