@@ -489,4 +489,81 @@ memoria, aunque esa ventaja se reduce cuando el volumen de datos
 supera la memoria disponible del clúster, escenario en el que
 MapReduce conserva una eficiencia comparativamente mayor en tareas de
 menor tamaño~\autocite{tekdogan2021,utami2024}.
+
+    \subsection{Computación en la nube: modelos y proveedores}
+    \label{sec:fundamento-cloud}
+
+    \subsubsection{Definición del NIST y características esenciales}
+
+    El NIST define la computación en la nube como un modelo que habilita
+    el acceso ubicuo, conveniente y bajo demanda a un conjunto compartido
+    de recursos de cómputo configurables —redes, servidores,
+    almacenamiento, aplicaciones y servicios— que pueden aprovisionarse y
+    liberarse con un esfuerzo mínimo de gestión o interacción con el
+    proveedor~\autocite{mell2011}. Ese modelo se compone de cinco
+    características esenciales: autoservicio bajo demanda, acceso amplio a
+    la red, agrupación de recursos (\emph{resource pooling}), elasticidad
+    rápida y servicio medido; además de tres modelos de servicio y cuatro
+    modelos de despliegue que la propia especificación detalla y que
+    sirven de vocabulario estándar para describir cualquier oferta
+    comercial de nube~\autocite{mell2011,poggi2017}.
+
+    \subsubsection{Modelos de servicio: IaaS, PaaS, SaaS y FaaS}
+
+    Los tres modelos de servicio definidos por el NIST se distinguen por
+    el grado de responsabilidad de gestión que asume el consumidor frente
+    al proveedor. Infraestructura como Servicio (IaaS) entrega capacidad
+    de cómputo, almacenamiento y red en bruto, sobre la cual el usuario
+    despliega su propio sistema operativo y pila de software; Plataforma
+    como Servicio (PaaS) ofrece un entorno de ejecución ya gestionado en
+    el que el consumidor solo aporta la aplicación; y Software como
+    Servicio (SaaS) entrega software ya operativo, sin que el consumidor
+    gestione infraestructura ni plataforma
+    alguna~\autocite{mell2011}. \emph{Function as a Service} (FaaS) no forma
+    parte de la definición original del NIST de 2011, sino que constituye
+    una evolución posterior del modelo PaaS en la que el proveedor ejecuta
+    fragmentos de código por invocación individual y factura únicamente
+    el tiempo de cómputo efectivamente consumido, sin que el consumidor
+    gestione servidores ni instancias de forma
+    explícita~\autocite{hassan2021,mell2011}.
+
+    \subsubsection{Proveedores para procesamiento distribuido}
+
+    Los tres grandes proveedores de nube pública ofrecen servicios
+    gestionados equivalentes en propósito para ejecutar motores como
+    Hadoop y Spark. Amazon EMR es una plataforma de clústeres gestionados
+    que simplifica el aprovisionamiento y la operación de estos motores,
+    con variantes de despliegue sobre EC2, sobre Kubernetes (EMR on EKS) y
+    sin servidor (EMR Serverless); Azure HDInsight cumple una función
+    equivalente dentro del ecosistema Microsoft, aunque conviene verificar
+    el estado de soporte de cada versión antes de dimensionar un
+    despliegue, dado que Microsoft ha retirado versiones y variantes del
+    servicio en el pasado~\autocite{poggi2017}. En Google Cloud, el servicio
+    conocido históricamente como Dataproc pasó a denominarse
+    \emph{Managed Service for Apache Spark}, marca que agrupa tanto el
+    despliegue en clúster tradicional como el despliegue sin servidor, en
+    el que la infraestructura escala automáticamente y solo se factura el
+    tiempo en que la carga se ejecuta~\autocite{poggi2017,hassan2021}.
+    Cualquier afirmación sobre costo o dimensionamiento de recursos en el
+    dominio del PFC debe contrastarse con la documentación oficial vigente
+    del proveedor elegido, consultada en una fecha específica, dado que
+    las tarifas y nomenclaturas de estos servicios cambian con
+    frecuencia.
+
+    \subsubsection{Arquitecturas Lambda y Kappa}
+
+    Sobre esta infraestructura de proveedores se apoyan dos patrones
+    arquitectónicos para organizar el procesamiento de datos a gran
+    escala. La arquitectura Lambda separa el flujo de datos en tres capas:
+    una capa \emph{batch} que procesa el histórico completo con máxima
+    exactitud pero alta latencia, una capa de velocidad
+    (\emph{speed layer}) que procesa los datos más recientes para ofrecer
+    resultados de baja latencia, y una capa de servicio que unifica ambas
+    vistas para responder a las consultas del
+    usuario~\autocite{abughazala2024,ganachari2020}. La arquitectura Kappa
+    elimina la capa \emph{batch} y trata todo dato como un flujo continuo
+    sobre una única canalización de \emph{streaming}, lo que reduce la
+    duplicación de lógica entre las capas batch y de velocidad a costa de
+    depender por completo de la robustez y capacidad de reprocesamiento
+    del motor de \emph{streaming} elegido~\autocite{abughazala2024,ganachari2020}.
 \end{document}
