@@ -425,13 +425,14 @@ ISP~\autocite{gustafson1988}--.
 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.8\textwidth]{resultados/figuras/fig2_speedup.png}
+        \includegraphics[width=0.8\textwidth]{../resultados/figuras/fig2_speedup.png}
         \caption{Speedup teórico según la Ley de Amdahl para
             $p = 0{,}5,\ 0{,}75,\ 0{,}9,\ 0{,}95$ frente al número de
             procesadores $N$.}
         \label{fig:speedup_amdahl}
     \end{figure}
 \subsubsection{Limitaciones para el procesamiento iterativo}
+\label{sec:fundamento-mapreduce}
 
 La misma restricción que simplifica el modelo de programación impone,
 sin embargo, una limitación estructural: MapReduce materializa los
@@ -796,7 +797,7 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.8\linewidth]{figuras/fig1_barras.png}
+        \includegraphics[width=0.8\linewidth]{../resultados/figuras/fig1_barras.png}
         \caption{Tiempo de ejecución (mediana de 5 repeticiones) de pandas frente a PySpark
             (\texttt{local[4]}) para cada una de las cinco transformaciones.}
         \label{fig:barras}
@@ -918,7 +919,7 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.75\linewidth]{figuras/fig2_speedup.png}
+        \includegraphics[width=0.75\linewidth]{../resultados/figuras/fig2_speedup.png}
         \caption{Speedup observado de T3 (\emph{join}) frente al número de \emph{executors},
             superpuesto con la curva teórica de Amdahl ajustada ($p=0.4607$) y su asíntota
             $S_{\text{máx}}=1.8543$.}
@@ -932,7 +933,7 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.75\linewidth]{figuras/fig3_eficiencia.png}
+        \includegraphics[width=0.75\linewidth]{../resultados/figuras/fig3_eficiencia.png}
         \caption{Eficiencia del paralelismo $E(N)=S(N)/N$ observada y teórica para T3
             (\emph{join}).}
         \label{fig:eficiencia}
@@ -961,7 +962,7 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.85\linewidth]{figuras/spark_ui_t3.png}
+        \includegraphics[width=0.85\linewidth]{../evidencia/spark_ui_t3.png}
         \caption{Spark UI --- DAG Visualization del \emph{job} correspondiente a la transformación
         T3 (\emph{join}), mostrando el \emph{stage} 2 con las etapas
         \texttt{parallelize}~$\to$~\texttt{mapPartitions}~$\to$~\texttt{map}~$\to$~\texttt{mapPartitions}~$\to$~\texttt{WholeStageCodegen}~$\to$~\texttt{Exchange}.}
