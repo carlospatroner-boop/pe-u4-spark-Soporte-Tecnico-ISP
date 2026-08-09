@@ -370,5 +370,123 @@ licencia y volumen se documentan en detalle en la \Cref{sec:procedimiento}.
             procesadores $N$.}
         \label{fig:speedup_amdahl}
     \end{figure}
+\subsubsection{Limitaciones para el procesamiento iterativo}
 
+La misma restricción que simplifica el modelo de programación impone,
+sin embargo, una limitación estructural: MapReduce materializa los
+resultados intermedios en disco al final de cada job y debe volver a
+leerlos desde disco en el job siguiente, lo cual penaliza fuertemente
+a los algoritmos iterativos —comunes en aprendizaje automático y en
+análisis de grafos— que necesitan reutilizar repetidamente el mismo
+conjunto de datos en memoria entre iteraciones~\autocite{white2015}. Esta
+limitación fue, de hecho, uno de los motivadores explícitos del
+rediseño de Hadoop hacia YARN, cuyos autores señalan que, bajo la
+arquitectura original, los usuarios recurrían a patrones forzados
+—como enviar trabajos de \emph{solo map} para simular cómputo
+iterativo con planificación en grupo— precisamente porque el modelo
+MapReduce clásico no ofrecía un mecanismo nativo para este tipo de
+cargas~\autocite{vavilapalli2013,white2015}.
+
+\subsubsection{Evidencia empírica: Hadoop frente a Spark}
+
+Cualquier afirmación comparativa de rendimiento entre Hadoop y Spark
+debe apoyarse en evidencia empírica publicada y no en material
+promocional de proveedores. Ahmed et al.\ realizan una comparación
+sistemática de ambos motores mediante la suite de \emph{benchmarking}
+HiBench, ejecutando cargas de trabajo de tipo \texttt{WordCount}
+(agregación) y \texttt{TeraSort} (\emph{shuffle} intensivo) sobre
+volúmenes de hasta 600\,GB en un clúster de 80 núcleos y
+60\,TB de almacenamiento~\autocite{ahmed2020}. Sus resultados muestran que
+Spark supera a Hadoop en ambas cargas cuando los parámetros se
+sintonizan correctamente, con mejoras de hasta 2\texttimes\ en
+\texttt{WordCount} y de hasta 14\texttimes\ en \texttt{TeraSort} para
+los volúmenes de datos evaluados, aunque el rendimiento de Spark se
+degrada cuando el tamaño de los datos excede la memoria
+disponible~\autocite{ahmed2020}. Esta ventaja de Spark se explica
+principalmente porque procesa los conjuntos de trabajo en memoria en
+lugar de materializarlos en disco entre etapas, evitando el ciclo de
+lectura/escritura que penaliza a MapReduce, una explicación consistente
+con la limitación estructural descrita en la
+subsección anterior~\autocite{ahmed2020,white2015}.
+
+% =====================================================================
+% 5.3 Apache Spark: arquitectura y modelo de programación
+% 5.4 Computación en la nube: modelos y proveedores
+% Requiere en el preámbulo: amsmath, graphicx, booktabs, listings, siunitx,
+% biblatex (estilo IEEE) con \addbibresource{references_U4.bib}
+% =====================================================================
+
+\subsection{Apache Spark: arquitectura y modelo de programación}
+\label{sec:fundamento-spark}
+
+\subsubsection{Arquitectura: driver, cluster manager y executors}
+
+La arquitectura de Spark se organiza en torno a tres componentes. El
+\texttt{driver} ejecuta el programa principal de la aplicación,
+construye el plan lógico de ejecución y solicita los recursos
+necesarios al \texttt{cluster manager} —que puede operar en modo
+autónomo (\emph{standalone}), sobre YARN (véase la
+Sección~\ref{sec:fundamento-mapreduce}) o sobre Kubernetes—, el cual reparte
+esos recursos entre las aplicaciones activas del
+clúster~\autocite{khuat2025,zaharia2010}. Los \texttt{executors} son los
+procesos que efectivamente resuelven las tareas asignadas en los nodos
+trabajadores: almacenan datos en memoria o disco y reportan
+periódicamente su estado al \texttt{driver}. Cada aplicación recibe su
+propio conjunto de executors, que persisten durante toda su ejecución;
+esto permite reutilizar datos cacheados entre etapas de una misma
+aplicación, pero impide compartirlos directamente con otras
+aplicaciones sin recurrir a un almacenamiento
+externo~\autocite{khuat2025,zaharia2010}.
+
+\subsubsection{El modelo RDD y la tolerancia a fallos mediante lineage}
+
+El modelo de \emph{Resilient Distributed Dataset} (RDD) resuelve el
+problema de la tolerancia a fallos sin recurrir a la replicación
+física de los datos entre nodos, a diferencia de la durabilidad que
+HDFS provee a MapReduce entre etapas~\autocite{zaharia2012}. En su lugar,
+cada RDD mantiene un \emph{lineage}: un registro de las
+transformaciones que lo originaron a partir de datos fuente u otros
+RDD. Ante la pérdida de una partición por fallo de un nodo, Spark
+recorre ese lineage y recalcula únicamente la partición afectada, en
+lugar de tener que recuperar una réplica completa desde
+disco~\autocite{zaharia2012,khuat2025}. Esta estrategia reduce el costo de
+tolerancia a fallos en cargas iterativas, aunque tiene una
+contrapartida: cuando las cadenas de lineage se alargan demasiado —por
+ejemplo, tras muchas iteraciones sucesivas—, el costo de
+recomputación ante un fallo también crece, lo que hace conveniente
+introducir puntos de control (\emph{checkpoints}) que trunquen el
+lineage de forma periódica~\autocite{zaharia2012}.
+
+\subsubsection{DataFrames, Datasets y evaluación perezosa}
+
+Sobre los RDD se construyen las APIs de DataFrames y Datasets, que
+añaden un esquema de columnas nombradas y permiten a Spark aprovechar
+el optimizador Catalyst para planificar la ejecución; el Dataset suma,
+además, verificación de tipos en tiempo de
+compilación~\autocite{armbrust2015,tang2020}. Todas las transformaciones
+sobre estas estructuras son perezosas (\emph{lazy}): no se ejecutan en
+el momento en que se escriben, sino que se acumulan en un plan lógico
+hasta que una acción exige devolver un resultado concreto al
+\texttt{driver}. Ese diferimiento es precisamente lo que permite a
+Catalyst reordenar operaciones, descender predicados de filtrado y
+podar columnas antes de ejecutar nada, y explica por qué el plan real
+de ejecución no sigue necesariamente el orden en que aparece escrito
+el código fuente~\autocite{armbrust2015,tang2020}.
+
+\subsubsection{DAG, stages, tasks y comparación de rendimiento}
+
+Cuando una acción dispara la ejecución, Spark materializa el plan
+lógico como un grafo acíclico dirigido (DAG) que el planificador divide
+en \emph{stages} según el tipo de dependencia entre transformaciones:
+las dependencias estrechas (\emph{narrow}) se encadenan dentro de un
+mismo stage sin mover datos entre nodos, mientras que las dependencias
+amplias (\emph{wide}) exigen un \emph{shuffle} y abren un stage
+nuevo~\autocite{tang2020,khuat2025}. Cada stage se descompone a su vez en
+\emph{tasks} —una por partición—, que los executors resuelven en
+paralelo. La evidencia empírica sitúa a Spark, en promedio, alrededor
+de cinco veces más rápido que MapReduce gracias al procesamiento en
+memoria, aunque esa ventaja se reduce cuando el volumen de datos
+supera la memoria disponible del clúster, escenario en el que
+MapReduce conserva una eficiencia comparativamente mayor en tareas de
+menor tamaño~\autocite{tekdogan2021,utami2024}.
 \end{document}
