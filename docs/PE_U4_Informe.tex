@@ -817,4 +817,83 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
     únicamente como evidencia de la variabilidad de la medición a bajo $N$, consistente con lo
     señalado por Jain sobre la necesidad de tratar mediciones de sistemas como variables
     aleatorias y no como valores deterministas.
+    \subsubsection{Speedup máximo teórico y N para el 90\% de \texorpdfstring{$S_{\text{máx}}$}{Smax}}
+
+    Con $p=0.4607$, el speedup máximo teórico (\Cref{eq:amdahl-max}) es
+
+    \begin{equation}
+        S_{\text{máx}} = \frac{1}{1-p} = \frac{1}{1-0.4607} = \frac{1}{0.5393} = 1.8543.
+        \label{eq:calculo-smax}
+    \end{equation}
+
+    Es decir, sin importar cuántos \emph{executors} adicionales se agreguen, la transformación T3 no
+    podría acelerarse más de $1.85\times$ respecto de su ejecución en un único hilo, dada la fracción
+    no escalable observada. Para determinar cuántos \emph{executors} se necesitan para alcanzar el
+    90\% de ese máximo, se despeja $N$ de $S(N) = 0.9 \cdot S_{\text{máx}}$ a partir de la
+    \Cref{eq:amdahl}:
+
+    \begin{align}
+        0.9 \, S_{\text{máx}} &= \frac{1}{(1-p) + \dfrac{p}{N}}
+        \;\;\Longrightarrow\;\;
+        (1-p) + \frac{p}{N} = \frac{1}{0.9\, S_{\text{máx}}} \notag \\
+        \frac{p}{N} &= \frac{1}{0.9 \, S_{\text{máx}}} - (1-p)
+        \;\;\Longrightarrow\;\;
+        N = \frac{p}{\dfrac{1}{0.9\,S_{\text{máx}}} - (1-p)}. \label{eq:calculo-n90}
+    \end{align}
+
+    Sustituyendo $p=0.4607$ y $S_{\text{máx}}=1.8543$:
+
+    \begin{equation}
+        N = \frac{0.4607}{\dfrac{1}{0.9 \times 1.8543} - 0.5393}
+        = \frac{0.4607}{0.5990 - 0.5393}
+        = \frac{0.4607}{0.0599}
+        \approx 7.69.
+        \label{eq:calculo-n90-final}
+    \end{equation}
+
+    Se necesitarían, por tanto, \textbf{aproximadamente 8 \emph{executors}} para que la
+    transformación T3 alcance el 90\% de su \emph{speedup} máximo teórico --un resultado que se
+    retoma textualmente en la Pregunta 1 del Anexo A--.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{figuras/fig2_speedup.png}
+        \caption{Speedup observado de T3 (\emph{join}) frente al número de \emph{executors},
+            superpuesto con la curva teórica de Amdahl ajustada ($p=0.4607$) y su asíntota
+            $S_{\text{máx}}=1.8543$.}
+        \label{fig:speedup}
+    \end{figure}
+
+    La \Cref{fig:speedup} hace visible el comportamiento no monótono entre $N=1$ y $N=2$ discutido
+    arriba, y cómo el punto $N=4$ --el único con paralelismo real efectivo en esta máquina de
+    4 núcleos físicos-- se ajusta razonablemente a la curva teórica extrapolada desde ese único punto
+    informativo.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{figuras/fig3_eficiencia.png}
+        \caption{Eficiencia del paralelismo $E(N)=S(N)/N$ observada y teórica para T3
+            (\emph{join}).}
+        \label{fig:eficiencia}
+    \end{figure}
+
+    La \Cref{fig:eficiencia} muestra que la eficiencia cae por debajo de $E(N)=0.5$ ya en $N=2$
+    (reflejando el \emph{speedup} sub-unitario en ese punto) y se recupera parcialmente en $N=4$
+    ($E(4) = S(4)/4 = 1.6792/4 = 0.42$), pero se mantiene lejos del ideal $E=1$: agregar el cuarto
+    \emph{executor} rinde menos de la mitad del beneficio proporcional que rendiría en un escenario
+    sin sobrecarga, coherente con una fracción no escalable observada superior al 46\%.
+
+    \subsection{Verificación de equivalencia entre motores}
+    \label{sec:resultados-equivalencia}
+
+    Se verificó que pandas y PySpark produjeran resultados equivalentes para las cinco
+    transformaciones, comparando cardinalidad y agregados de control (no fila por fila, dado que el
+    orden de salida de un motor distribuido no está garantizado salvo ordenamiento explícito). Las
+    cinco transformaciones coincidieron \textbf{exactamente}: T1 (558{,}289 filas en ambos motores,
+    misma distribución por \texttt{issue\_type}), T2 (57 grupos, suma de \texttt{total\_tickets}
+    igual a 600{,}000 en ambos), T3 (600{,}000 filas, misma distribución por región censal), T4
+    (600{,}000 filas, misma distribución de prioridad: 276{,}702 BAJA / 180{,}288 MEDIA / 143{,}010
+    ALTA) y T5 (1{,}000 filas, mismo primer \texttt{id} tras ordenar). El detalle completo está en
+    \texttt{resultados/equivalencia.json}.
+
 \end{document}
