@@ -962,7 +962,7 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.85\linewidth]{../evidencia/spark_ui_t3.png}
+        \includegraphics[width=0.5\linewidth,height=0.7\textheight,keepaspectratio]{../evidencia/spark_ui_t3.png}
         \caption{Spark UI --- DAG Visualization del \emph{job} correspondiente a la transformación
         T3 (\emph{join}), mostrando el \emph{stage} 2 con las etapas
         \texttt{parallelize}~$\to$~\texttt{mapPartitions}~$\to$~\texttt{map}~$\to$~\texttt{mapPartitions}~$\to$~\texttt{WholeStageCodegen}~$\to$~\texttt{Exchange}.}
