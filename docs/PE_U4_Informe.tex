@@ -607,4 +607,54 @@ y \texttt{zip} (192), que se aprovechan como condición de filtrado en T1. El de
 pandas (\texttt{pd.read\_csv}) como en un DataFrame de PySpark (\texttt{spark.read.csv} con
 \texttt{inferSchema}), confirmando en ambos motores 600{,}000 filas y el mismo esquema inferido.
 
+    \subsection{Las cinco transformaciones}
+    \label{sec:procedimiento-transformaciones}
+
+    Las cinco transformaciones exigidas por la guía se implementaron de forma idéntica --misma
+    lógica de negocio, mismas condiciones-- en pandas y en PySpark, reutilizando en ambos motores el
+    mismo módulo de referencia (\texttt{src/referencia.py}) para la tabla de regiones del
+    \emph{join} (T3) y la función de clasificación de prioridad (T4), de modo que la verificación de
+    equivalencia entre motores (\Cref{sec:resultados}) sea válida y no dependa de una coincidencia
+    accidental.
+
+    \begin{lstlisting}[language=Python,caption={Las cinco transformaciones en PySpark (\texttt{src/transformaciones\_spark.py}).},label={lst:transformaciones-spark}]
+def t1_filtrado(df):
+    return df.filter(
+        F.col("issue_type").isin("Internet", "Phone")
+        & F.col("method").isNotNull()
+        & F.col("city").isNotNull()
+        & F.col("state").isNotNull()
+    ).select(*COLUMNAS_T1)
+
+def t2_agrupacion(df):
+    return df.groupBy("state").agg(
+        F.count("id").alias("total_tickets"),
+        F.countDistinct("issue").alias("tipos_issue_distintos"),
+        F.min("ticket_created").alias("primer_ticket"),
+        F.max("ticket_created").alias("ultimo_ticket"),
+    )
+
+def t3_join(df, regiones):
+    return df.join(regiones, on="state", how="left")
+
+def t4_columna_derivada(df):
+    return df.withColumn("prioridad", _prioridad_udf(F.col("issue_type"), F.col("issue")))
+
+def t5_top_n(df, n=1000):
+    return df.orderBy(F.col("ticket_created").desc()).limit(n)
+    \end{lstlisting}
+
+    \textbf{T1 (filtrado):} tickets de las categorías \emph{Internet} o \emph{Phone} con
+    \texttt{method}, \texttt{city} y \texttt{state} no nulos --condición compuesta-- con selección
+    de siete columnas relevantes. \textbf{T2 (agrupación):} agrupación por estado con cuatro
+    funciones de agregación (\texttt{count}, \texttt{countDistinct}, \texttt{min}, \texttt{max}).
+    \textbf{T3 (\emph{join}):} unión por \texttt{state} entre el DataFrame de tickets y una segunda
+    tabla de dimensión con la región censal de EE.\,UU.\ de cada estado (56 filas), construida en
+    código a partir de la clasificación oficial de la Oficina del Censo de EE.\,UU. \textbf{T4
+        (columna derivada):} una función definida por el usuario (\texttt{clasificar\_prioridad}, en
+    \texttt{referencia.py}) que combina \texttt{issue\_type} e \texttt{issue} para asignar una
+    prioridad de atención técnica (ALTA para incidencias de disponibilidad/interferencia/velocidad,
+    MEDIA para facturación/cuenta, BAJA para quejas de contenido), registrada como UDF de Spark y
+    aplicada con \texttt{.apply()} en pandas. \textbf{T5 (\emph{top-N}):} ordenamiento por fecha de
+    apertura descendente y selección de los 1{,}000 tickets más recientes.
 \end{document}
