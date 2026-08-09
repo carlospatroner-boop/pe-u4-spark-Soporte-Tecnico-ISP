@@ -1051,4 +1051,82 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
     análisis en pandas; la migración a Spark se justificaría al acumular varios años de histórico
     para análisis retrospectivos, o al pasar a un régimen de streaming continuo (Pregunta 3).
 
+    \subsection*{Pregunta 3. Rediseño con Spark Structured Streaming para datos en tiempo real}
+
+    Si los tickets del ISP llegaran en tiempo real en vez de procesarse por lotes, el
+    \emph{pipeline} se rediseñaría sobre Spark Structured Streaming, que trata un flujo continuo
+    como una tabla que crece indefinidamente y reutiliza la misma API de DataFrames que este
+    trabajo ya usa en modo \emph{batch}~\autocite{armbrust2015}. La
+    \textbf{fuente} (\emph{source}) natural para eventos de creación de tickets sería un tópico de
+    Apache Kafka (\texttt{readStream.format("kafka")}), donde cada evento de \enquote{ticket
+    creado} o \enquote{ticket actualizado} se publica en el momento en que ocurre; alternativamente,
+    para una migración incremental más simple, podría usarse un directorio monitoreado de archivos
+    (\emph{file source}) si el sistema de origen los deposita periódicamente. Sobre ese flujo se
+    aplicarían transformaciones equivalentes a T1 y T4 --filtrado y clasificación de prioridad-- de
+    forma \emph{stateless}, evento por evento, reutilizando literalmente el mismo código de
+    \texttt{t1\_filtrado} y la UDF de \texttt{t4\_columna\_derivada} de este trabajo, ya que
+    Structured Streaming ejecuta las mismas transformaciones de DataFrame sin cambios. La
+    transformación T2 (agrupación), en cambio, requeriría una \emph{watermark} explícita --por
+    ejemplo, \texttt{withWatermark("ticket\_created", "10 minutes")}-- para acotar cuánto tiempo se
+    espera a eventos tardíos antes de cerrar una ventana de agregación por estado, evitando que el
+    estado acumulado crezca indefinidamente.
+
+    El \textbf{\emph{sink}} de salida dependería del consumidor: para alimentar un panel de
+    priorización de la cola de soporte en tiempo casi real, un \emph{sink} a una base de datos
+    operacional (por ejemplo, con el conector JDBC de Spark hacia una base distribuida como
+    CockroachDB) permitiría que el sistema de atención al cliente consulte la prioridad actualizada;
+    para análisis histórico acumulativo, un \emph{sink} a almacenamiento en formato Parquet
+    particionado por fecha preservaría los datos crudos para reprocesar. La \textbf{política de
+    \emph{triggers}} --con qué frecuencia se materializa un nuevo micro-lote-- se configuraría con
+    \texttt{trigger(processingTime="1 minute")} para el caso de uso de priorización de soporte,
+    donde una latencia de un minuto es aceptable y preferible a la sobrecarga de un modo
+    \texttt{continuous} de latencia sub-segundo, reservado para casos donde cada milisegundo importa.
+    En cuanto a \textbf{garantías de entrega}, Structured Streaming ofrece semántica
+    \emph{exactly-once} extremo a extremo combinando \emph{checkpointing} del progreso de lectura
+    (offsets de Kafka) con \emph{sinks} idempotentes; para el \emph{sink} JDBC esto exige diseñar la
+    escritura como un \texttt{upsert} por \texttt{ticket\_id} en vez de un \texttt{insert} simple,
+    de modo que un reprocesamiento tras una falla --recuperado gracias al mismo \emph{lineage}
+    reproducible que sustenta la tolerancia a fallos de los RDD subyacentes-- no duplique
+    registros~\autocite{zaharia2012}.
+
+    \subsection*{Pregunta 4. Por qué Spark es más eficiente que MapReduce para procesamiento iterativo}
+
+    La ventaja de Spark sobre MapReduce en cargas iterativas --entrenamiento de modelos de
+    aprendizaje automático, algoritmos de grafos, o cualquier flujo que recorre el mismo conjunto de
+    datos varias veces-- se explica directamente por dos decisiones de diseño complementarias:
+    el \emph{lineage} de los RDD y la evaluación perezosa. En el modelo MapReduce clásico, cada
+    paso \texttt{map}/\texttt{reduce} lee su entrada desde HDFS y escribe su salida de vuelta a
+    HDFS, es decir, a disco~\autocite{dean2008,white2015}. Un algoritmo iterativo de
+    $k$ pasos sobre el mismo conjunto de datos --por ejemplo, $k$ iteraciones de descenso de
+    gradiente sobre el mismo conjunto de entrenamiento-- implica, en MapReduce puro, $k$ ciclos
+    completos de lectura y escritura a disco del conjunto completo, incluso si ese conjunto cabe
+    íntegramente en la memoria RAM del clúster. El costo de I/O a disco, uno o dos órdenes de
+    magnitud más lento que el acceso a memoria, domina el tiempo total y crece linealmente con el
+    número de iteraciones.
+
+    Spark evita esto manteniendo los datos como RDD --o DataFrames-- \textbf{en memoria} entre
+    transformaciones sucesivas, cacheando explícitamente (\texttt{.cache()}/\texttt{.persist()})
+    los conjuntos que se reutilizan en múltiples iteraciones. La pregunta natural es cómo se logra
+    tolerancia a fallos sin la replicación física a disco que ofrece HDFS: la respuesta es el
+    \textbf{\emph{lineage}}, el grafo de transformaciones que produjo cada RDD a partir de los datos
+    de origen~\autocite{zaharia2012}. Si una partición se pierde --por ejemplo, por la caída de un
+    \emph{executor}-- Spark no necesita leer una copia de respaldo desde disco, como haría HDFS;
+    simplemente recomputa esa partición reaplicando su \emph{lineage} sobre los datos de origen
+    (que sí están replicados de forma duradera). Esto convierte la tolerancia a fallos en un costo
+    que solo se paga cuando efectivamente ocurre una falla, en vez de un costo fijo de escritura
+    replicada en cada paso, como en MapReduce.
+
+    La \textbf{evaluación perezosa} complementa esta ventaja de un modo menos obvio pero igual de
+    importante: como las transformaciones no se ejecutan hasta que una acción las requiere, Spark
+    puede observar la cadena completa de transformaciones antes de ejecutar nada y optimizarla como
+    un todo --por ejemplo, fusionando varias transformaciones \texttt{map} consecutivas en un único
+    paso de \texttt{WholeStageCodegen}, como se observó directamente en el plan físico de T3 de
+    este trabajo (\Cref{fig:spark-ui})--, en vez de materializar un resultado intermedio en disco
+    después de cada paso individual, como fuerza la arquitectura de MapReduce. Zaharia et al.\
+    reportan mejoras de uno a dos órdenes de magnitud de Spark sobre Hadoop MapReduce
+    específicamente en cargas iterativas de aprendizaje automático, mientras que la ventaja es
+    mucho más modesta --o, como este mismo trabajo demuestra, inexistente-- en cargas de una sola
+    pasada sobre datasets de tamaño moderado, exactamente la asimetría que predice este
+    razonamiento~\autocite{zaharia2012}.
+
 \end{document}
