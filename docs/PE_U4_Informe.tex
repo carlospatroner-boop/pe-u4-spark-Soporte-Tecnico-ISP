@@ -956,4 +956,28 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
     idealmente, se ajustaría con más réplicas y más niveles de $N$ sobre un clúster real. El ajuste
     de mínimos cuadrados sobre los tres puntos coincidió con el cálculo algebraico puntual dentro de
     0.2\%, lo que da cierta confianza en la estimación, pero no elimina esta limitación de fondo.
+
+    Un tercer punto, ya anticipado en el fundamento teórico, es la distinción entre la fracción
+    serial \emph{algorítmica} de las cinco transformaciones (que, examinado el código, es casi nula:
+    ninguna transformación tiene una sección explícitamente marcada como no paralelizable) y la
+    fracción no escalable \emph{observada} de 46\%, que es enteramente overhead de coordinación y
+    sobrecarga del motor. Esto significa que la Ley de Amdahl, aplicada de forma ingenua a la
+    fracción de código no paralelizable, predeciría un \emph{speedup} mucho más alto del observado;
+    el modelo sigue siendo válido matemáticamente, pero la variable de entrada ($p$) que se le
+    alimenta en la práctica captura mucho más que el algoritmo en sí. Esta es, en opinión del
+    equipo, la lección conceptual más importante de esta práctica: la Ley de Amdahl no falla al
+    predecir un \emph{speedup} bajo, sino que revela --correctamente-- que la mayor parte del
+    \enquote{trabajo} de este \emph{pipeline} a esta escala es coordinación distribuida, no cómputo
+    paralelizable.
+
+    Finalmente, desde la perspectiva del dominio de negocio (Soporte Técnico ISP), estos resultados
+    tienen una implicación directa y quizás contraintuitiva: si el volumen real de tickets de un ISP
+    pequeño o mediano se mantuviera en el orden de cientos de miles de registros por lote de
+    análisis, la recomendación técnica honesta --respaldada por la medición, no por la expectativa--
+    sería \emph{no} migrar a Spark, y mantener el análisis en pandas hasta que el volumen justifique
+    el costo de coordinación. La migración a un motor distribuido solo se justifica, para este
+    dominio, a partir del umbral de volumen que se cuantifica en la Pregunta 2 del Anexo A, o cuando
+    el patrón de acceso deje de ser por lotes y pase a streaming continuo, escenario abordado en la
+    Pregunta 3.
+
 \end{document}
