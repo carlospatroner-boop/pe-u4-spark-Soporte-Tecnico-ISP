@@ -657,4 +657,101 @@ def t5_top_n(df, n=1000):
     MEDIA para facturación/cuenta, BAJA para quejas de contenido), registrada como UDF de Spark y
     aplicada con \texttt{.apply()} en pandas. \textbf{T5 (\emph{top-N}):} ordenamiento por fecha de
     apertura descendente y selección de los 1{,}000 tickets más recientes.
+    \subsection{Protocolo de medición}
+    \label{sec:procedimiento-medicion}
+
+    Cada transformación se midió con \texttt{time.perf\_counter()} bajo un protocolo común
+    (\texttt{src/medicion.py}): una ejecución de calentamiento descartada explícitamente, seguida de
+    cinco repeticiones cronometradas, reportando la mediana.
+
+    \begin{lstlisting}[language=Python,caption={Protocolo de medición común a pandas y PySpark (\texttt{src/medicion.py}).},label={lst:medicion}]
+def medir(transformacion, func, reps=5, warmup=1, materialize=None):
+    for _ in range(warmup):
+        r = func()
+        if materialize is not None:
+            materialize(r)
+    tiempos = []
+    for _ in range(reps):
+        t0 = time.perf_counter()
+        resultado = func()
+        if materialize is not None:
+            materialize(resultado)
+        t1 = time.perf_counter()
+        tiempos.append(t1 - t0)
+    return tiempos, statistics.median(tiempos), resultado
+    \end{lstlisting}
+
+    Para PySpark, dado que las transformaciones son perezosas, cada medición fuerza la
+    materialización del resultado con la acción \texttt{count()} antes de detener el cronómetro,
+    evitando medir únicamente la construcción del DAG. La sesión de Spark se inicializó con
+    \texttt{SparkSession.builder.config("spark.executor.instances", "4").getOrCreate()} y la
+    configuración efectiva se documentó con \texttt{spark.sparkContext.getConf().getAll()} para cada
+    una de las sesiones usadas (\texttt{resultados/spark\_config\_efectiva\_*.json}). Es importante
+    notar, con honestidad metodológica, que en modo \texttt{local[N]} --el único disponible dado que
+    el equipo no contó con un clúster físico multinodo-- el parámetro
+    \texttt{spark.executor.instances} no tiene efecto real sobre el paralelismo; el grado de
+    paralelismo se controla mediante el número de hilos de la URL maestra (\texttt{local[N]}), que sí
+    se documenta y varía explícitamente en el escalado de T3.
+
+    Para la transformación T3 (\emph{join}), además de la medición en la configuración por defecto,
+    se repitió el protocolo completo con \texttt{local[1]}, \texttt{local[2]} y \texttt{local[4]}
+    --reinicializando la sesión de Spark en cada caso, dado que el número de hilos del maestro no
+    puede cambiarse sin reiniciar el \texttt{SparkContext}-- para habilitar el análisis de
+    escalabilidad y el ajuste de la Ley de Amdahl (\Cref{sec:resultados}). La equivalencia de
+    resultados entre pandas y PySpark se verificó para las cinco transformaciones comparando
+    cardinalidad y agregados de control (distribución de categorías, sumas de conteos, primer
+    resultado tras ordenar), documentado en \texttt{resultados/equivalencia.json}.
+% ============================================================
+% Sección: secciones/resultados
+% ============================================================
+    \section{Resultados}
+    \label{sec:resultados}
+
+    \subsection{Tiempos de ejecución y \emph{speedup} por transformación}
+    \label{sec:resultados-tiempos}
+
+    La \Cref{tab:tiempos} resume, para cada transformación, la mediana de cinco repeticiones
+    (descartada la ejecución de calentamiento) en pandas y en PySpark (sesión \texttt{local[4]}), y
+    el \emph{speedup} $S = T_{\text{pandas}} / T_{\text{PySpark}}$.
+
+    \begin{table}[H]
+        \centering
+        \caption{Tiempos de ejecución (mediana de 5 repeticiones) y \emph{speedup} por
+        transformación. Los tiempos crudos completos están en
+        \texttt{resultados/tiempos\_crudos.csv}.}
+        \label{tab:tiempos}
+        \begin{tabular}{l S[table-format=1.4] S[table-format=1.4] S[table-format=1.4]}
+            \toprule
+            {Transformación} & {$T_{\text{pandas}}$ (\si{\second})} & {$T_{\text{PySpark}}$ (\si{\second})} & {Speedup $S$} \\
+            \midrule
+            T1 --- Filtrado             & 0.1846 & 1.0789 & 0.1711 \\
+            T2 --- Agrupación           & 0.1575 & 1.8854 & 0.0835 \\
+            T3 --- \emph{Join}          & 0.1363 & 1.8290 & 0.0745 \\
+            T4 --- Columna derivada     & 0.3559 & 0.8483 & 0.4195 \\
+            T5 --- \emph{Top-N}         & 0.1169 & 1.4286 & 0.0818 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{figuras/fig1_barras.png}
+        \caption{Tiempo de ejecución (mediana de 5 repeticiones) de pandas frente a PySpark
+            (\texttt{local[4]}) para cada una de las cinco transformaciones.}
+        \label{fig:barras}
+    \end{figure}
+
+    El hallazgo central de esta tabla --y de la \Cref{fig:barras}-- es que, a esta escala de datos
+    (600{,}000 filas), \textbf{PySpark resulta más lento que pandas en las cinco transformaciones},
+    con \emph{speedups} entre 0.075 y 0.42. Este resultado no es un error de medición: se discute en
+    profundidad, con su causa y su umbral de rentabilidad, en la Pregunta 2 del Anexo A
+    (\Cref{sec:preguntas-analisis}) y en la \Cref{sec:analisis-critico}. En resumen adelantado, la
+    sobrecarga fija de un motor distribuido --arranque de la JVM, planificación de \emph{tasks} por
+    el driver, serialización Python$\leftrightarrow$JVM vía Py4J, y para T3 específicamente la
+    construcción de un plan de \emph{Adaptive Query Execution}-- domina sobre el tiempo de cómputo
+    real cuando el volumen de datos es de cientos de miles de filas en vez de decenas o cientos de
+    millones. La transformación T4 (columna derivada) es la que menos penaliza a Spark
+    proporcionalmente ($S=0.42$) porque es la única que ejecuta, por fila, más trabajo de cómputo
+    efectivo (la evaluación de la UDF de prioridad) en relación con su overhead fijo, mientras que
+    T2 y T3 --predominantemente coordinación y \emph{shuffle}-- son las más penalizadas.
 \end{document}
