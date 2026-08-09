@@ -895,5 +895,30 @@ def medir(transformacion, func, reps=5, warmup=1, materialize=None):
     (600{,}000 filas, misma distribución de prioridad: 276{,}702 BAJA / 180{,}288 MEDIA / 143{,}010
     ALTA) y T5 (1{,}000 filas, mismo primer \texttt{id} tras ordenar). El detalle completo está en
     \texttt{resultados/equivalencia.json}.
+    \subsection{Evidencia de ejecución: Spark UI de la transformación T3}
+    \label{sec:resultados-evidencia}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.85\linewidth]{figuras/spark_ui_t3.png}
+        \caption{Spark UI --- DAG Visualization del \emph{job} correspondiente a la transformación
+        T3 (\emph{join}), mostrando el \emph{stage} 2 con las etapas
+        \texttt{parallelize}~$\to$~\texttt{mapPartitions}~$\to$~\texttt{map}~$\to$~\texttt{mapPartitions}~$\to$~\texttt{WholeStageCodegen}~$\to$~\texttt{Exchange}.}
+        \label{fig:spark-ui}
+    \end{figure}
+
+    La \Cref{fig:spark-ui} confirma empíricamente un punto discutido en la
+    \Cref{sec:fundamento-spark}: el plan físico real de T3 no es un simple \emph{join} de dos
+    lecturas, sino un DAG con múltiples etapas de \texttt{WholeStageCodegen} (compilación de código
+    Java en tiempo de ejecución, una optimización de Spark SQL que fusiona varias operaciones en un
+    solo bloque compilado) y un nodo \texttt{Exchange} correspondiente al \emph{shuffle} de la tabla
+    de regiones antes del \emph{join}. La inspección del plan completo vía la pestaña \emph{SQL /
+    DataFrame} de la Spark UI (documentada en \texttt{evidencia/spark\_ui\_t3\_stages.png}) confirma
+    además que el optimizador Catalyst incorpora nodos de \emph{Adaptive Query Execution}
+    (\texttt{AQEShuffleRead}) que ajustan el plan de \emph{shuffle} en tiempo de ejecución según el
+    tamaño real observado de cada partición --el mismo tipo de decisión adaptativa mencionado en la
+    \Cref{sec:fundamento-spark}--, y que el nodo final \texttt{BroadcastHashJoin} confirma que Spark
+    decidió difundir la tabla de regiones (56 filas) en lugar de aplicar un \emph{shuffle} simétrico
+    sobre ambos lados del \emph{join}.
 
 \end{document}
