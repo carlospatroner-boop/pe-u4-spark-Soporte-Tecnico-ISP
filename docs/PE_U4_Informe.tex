@@ -123,6 +123,41 @@
         \vfill
         {\small Repositorio: \url{https://github.com/carlospatroner-boop/pe-u4-spark-Soporte-Tecnico-ISP}}\\[0.3cm]
     \end{titlepage}
+
+
+
+        % ============================================================
+        % Resumen
+        % ============================================================
+
+        \begin{abstract}
+
+        En esta práctica se evaluó el rendimiento de un proceso de análisis de datos
+        implementado con pandas y Apache Spark, tomando como dominio de referencia el
+        PFC ACC -- Soporte Técnico ISP. Para el experimento se utilizó un conjunto de
+        600\,000 registros reales de quejas de consumidores de servicios de
+        telecomunicaciones, obtenido del portal público de la Federal Communications
+        Commission (FCC). Sobre estos datos se implementaron cinco transformaciones
+        equivalentes en pandas y PySpark: filtrado, agrupación, unión de datos,
+        generación de una columna de prioridad y selección de los registros más
+        recientes. Cada transformación fue ejecutada cinco veces y se utilizó la
+        mediana de los tiempos obtenidos para realizar la comparación.
+
+        Los resultados mostraron que, para el volumen de datos y el entorno utilizados,
+        pandas presentó menores tiempos de ejecución que PySpark en las cinco
+        transformaciones. Sin embargo, al analizar el comportamiento de la
+        transformación de unión con diferentes niveles de paralelismo, se comprobó que
+        el aumento de recursos puede mejorar el rendimiento, aunque esta mejora se
+        encuentra limitada por la parte del procesamiento que no escala de forma
+        eficiente. El análisis mediante la Ley de Amdahl permitió identificar estas
+        limitaciones y comprender que el uso de procesamiento distribuido no garantiza
+        por sí mismo un mejor rendimiento. Para el contexto de Soporte Técnico ISP, los
+        resultados indican que la adopción de Spark debe estar justificada por un
+        volumen de información suficientemente grande o por necesidades de
+        procesamiento continuo.
+
+        \end{abstract}
+
     % ============================================================
 % Sección: secciones/introduccion
 % ============================================================
